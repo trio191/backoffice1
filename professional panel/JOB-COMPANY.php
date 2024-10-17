@@ -104,7 +104,7 @@
         <div class="layout-page">
           <!-- Navbar -->
 
-          <?php include 'layout/header.php';?>
+          <?php include 'layout/header-2.php';?>
 
           <!-- / Navbar -->
 

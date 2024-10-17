@@ -15,7 +15,7 @@
       content="width=device-width, initial-scale=1.0, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0"
     />
 
-    <title>Owner Dashboard</title>
+    <title>Job Dashboard</title>
 
     <meta name="description" content="" />
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
@@ -114,7 +114,7 @@
         <div class="layout-page">
           <!-- Navbar -->
 
-          <?php include 'layout/header.php';?>
+          <?php include 'layout/header-2.php';?>
 
           <!-- / Navbar -->
 
@@ -126,7 +126,7 @@
                   <div class="col-lg-12 text-container" style="max-width: 1440px;padding-left: 100px;padding-right: 100px;"> <!-- Text container -->
                       <div class="row pt-2">
                           <div class="col-lg-7 text-white">
-                              <h3 class="text-white">Find the right professional</h3>
+                              <h3 class="text-white">Find your next job around the world!</h3>
                               
                           </div>
                           <div class="col-lg-5" style="text-align: right;">
@@ -145,13 +145,13 @@
                   <div class="container-fluid">
                     <ul class="navbar-nav">
                      <li class="nav-item">
-                        <a class="nav-link" href="new-1.php">Available jobs</a>
+                        <a class="nav-link" href="JOB-DASHBOARD.php">Available jobs</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="new-2.php">My Jobs</a>
+                        <a class="nav-link" href="JOB-COMPANY.php">My Jobs</a>
                     </li>
                     <li class="nav-item">
-                         <a class="nav-link" href="new-3.php">Bookmarked</a>
+                         <a class="nav-link" href="JOB-DASHBOARD.php">Bookmarked</a>
                     </li>
                     </ul>
                   </div>
