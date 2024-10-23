@@ -18,6 +18,7 @@
     <title>Jobs Detail</title>
 
     <meta name="description" content="" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet">
 
     <!-- Favicon -->
     <link rel="icon" type="image/x-icon" href="assets/assets/img/favicon/favicon.ico" />
@@ -56,6 +57,25 @@
     <!--? Config:  Mandatory theme config file contain global vars & default theme options, Set your preferred theme option in this file.  -->
     <script src="assets/assets/js/config.js"></script>
     <style type="text/css">
+       /* Initially hide the form outside the viewport */
+       #slideForm {
+            position: fixed;
+            right: -100%;
+            top: 0;
+            width: 400px;
+            height: 100%;
+            background-color: #fff;
+            box-shadow: -2px 0 5px rgba(0, 0, 0, 0.5);
+            transition: right 0.4s ease;
+            z-index: 9999;
+            padding: 20px;
+            overflow-y: auto; /* Add vertical scroll if content overflows */
+        }
+
+        /* Show the form when it has the "active" class */
+        #slideForm.active {
+            right: 0;
+        }
       .overlay {
     position: absolute;
     top: 0;
@@ -84,6 +104,83 @@
     background-color: #F2F6FA !important;
     color: #5E8BF7 !important;
 }
+body {
+            font-family: Arial, sans-serif;
+        }
+
+        /* Form hidden initially */
+        #applicationForm {
+            display: none;
+            width: 325%;
+            position: absolute;
+            right: 0;
+            top: 0;
+            z-index: 9999;
+            background-color: #fff;
+            padding: 20px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .form-section {
+            border: 1px solid #ddd;
+            padding: 20px;
+            background-color: #fff;
+        }
+
+        .form-section h5 {
+            font-size: 18px;
+            font-weight: bold;
+        }
+
+        .form-section p {
+            margin-bottom: 5px;
+            font-size: 14px;
+            color: #999;
+        }
+
+        .form-section input,
+        .form-section textarea,
+        .form-section select {
+            margin-bottom: 20px;
+        }
+
+        .form-section .btn {
+            width: 100%;
+        }
+
+        .total-cost {
+            background-color: #f1f3f5;
+            padding: 10px;
+            border-radius: 5px;
+            margin-bottom: 10px;
+        }
+
+        .text-danger {
+            color: #ff5757 !important;
+        }
+
+        .tag {
+            display: inline-block;
+            background-color: #e2e6ea;
+            padding: 5px 10px;
+            border-radius: 10px;
+            font-size: 12px;
+            margin-right: 5px;
+            margin-top: 10px;
+        }
+
+        .tag-remove {
+            margin-left: 10px;
+            cursor: pointer;
+        }
+
+        .form-control:invalid {
+            border-color: red;
+        }
+
+        .form-select:invalid {
+            border-color: red;
+        }
 
 
     </style>
@@ -105,7 +202,24 @@
           <?php include 'layout/header-2.php';?>
 
           <!-- / Navbar -->
-
+          <div
+                          class="offcanvas offcanvas-end"
+                          tabindex="-1"
+                          id="addYacht"
+                          aria-labelledby="addYacht"
+                          style="width: 500px !important;"
+                        >
+                          <div class="offcanvas-header border-bottom">
+                            <h5 id="offcanvasEndLabel" style="color:#00365E;font-size: 18px" class="offcanvas-title"> <i class="ti ti-arrow-left ti-md me-2 text-reset" style="margin-top: -5px" 
+                              data-bs-dismiss="offcanvas"
+                              aria-label="Close"></i> Add yacht</h5>
+                            
+                            
+                             <div class="offcanvas-body  mx-0 flex-grow-0">
+                         
+                             </div>
+                          </div>
+                        </div>
           <!-- Content wrapper -->
           <div class="content-wrapper">
             <!-- Content -->
@@ -131,9 +245,9 @@
                           <button type="button" class="btn waves-effect waves-light" style="border-radius: 0px !important;color: #00365E;background: #fff;">
                             Under analyssis
                           </button>
-                          <button type="button" class="btn waves-effect waves-light" style="border-radius: 0px !important;color: #fff;background: #5E8BF7;">
-                            Apply for this job
-                          </button>
+                          <button type="button" class="btn waves-effect waves-light" style="border-radius: 0px !important; color: #fff; background: #5E8BF7;" onclick="showForm()">
+    Apply for this job
+</button>
                           </div>
                       </div>
                   </div>
@@ -232,6 +346,7 @@
                           <div class="card mb-2" style="border: 1px solid #C6D2E7;box-shadow: none !important;background-size: 100% 100% ;padding: 20px;border-radius: 0px;color: #00365E;">
                               <span style="color:#00365E;font-size: 16px;">Surveyor: Yes</span>
                           </div>
+                         
                           <div class="card mb-2" style="border: 1px solid #C6D2E7;box-shadow: none !important;background-size: 100% 100% ;padding: 20px;border-radius: 0px;color: #00365E;">
                               <p style="color: #00365E;font-size: 18px;">Job type and skills</p>
                               <p style="color: #00365E;font-size: 14px;">The following skills are suggest for this job</p>
@@ -250,12 +365,88 @@
                                 </label>
                               </div>
                           </div>
-                          <button type="button" class="btn waves-effect waves-light w-100" style="border-radius: 0px !important;color: #fff;background: #5E8BF7;">
-                            Apply for this job
+                          
+                          <button type="button" data-bs-toggle="offcanvas"
+                          data-bs-target="#addYacht"
+                          aria-controls="addYacht" class="btn btn-white waves-effect waves-light" style="border-radius: 0px !important;color: #00365d;">
+                            <img src="/assets/img/yacht-black.png" style="width: 20%" class="me-1" />   Apply for this job
                           </button>
                           </div>
                         </div>
                       </div>
+                      <!-- Form -->
+<div id="slideForm">
+    <form class="needs-validation" novalidate>
+        <div class="mb-3">
+            <label for="message" class="form-label">Message</label>
+            <textarea class="form-control" id="message" rows="3" placeholder="Why are you suitable for this job?" required></textarea>
+            <div class="invalid-feedback">
+                Please provide a message.
+            </div>
+        </div>
+
+        <div class="mb-3">
+            <label for="availability" class="form-label">Availability</label>
+            <div class="input-group">
+                <span class="input-group-text"><i class="bi bi-calendar"></i></span>
+                <input type="date" id="availability" class="form-control" required>
+                <div class="invalid-feedback">
+                    Please select your availability date.
+                </div>
+            </div>
+        </div>
+
+        <div class="mb-3 form-check">
+            <input type="checkbox" class="form-check-input" id="timeframe" required>
+            <label class="form-check-label" for="timeframe">Timeframe for completing the job</label>
+            <div class="invalid-feedback">
+                Please confirm the timeframe.
+            </div>
+        </div>
+
+        <div class="mb-3">
+            <label for="workplan" class="form-label">Workplan</label>
+            <textarea class="form-control" id="workplan" rows="3" placeholder="Please describe your work plan" required></textarea>
+            <div class="invalid-feedback">
+                Please provide a workplan.
+            </div>
+        </div>
+
+        <div class="mb-3">
+            <label for="laborCost" class="form-label">Costs (labor and material)</label>
+            <div class="row">
+                <div class="col">
+                    <input type="number" class="form-control" id="laborCost" placeholder="EUR 3400" required>
+                    <div class="invalid-feedback">
+                        Please provide labor cost.
+                    </div>
+                </div>
+                <div class="col">
+                    <input type="number" class="form-control" id="materialCost" placeholder="EUR Material cost" required>
+                    <div class="invalid-feedback">
+                        Please provide material cost.
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="mb-3 total-cost">
+            <p>Total cost: <strong id="totalCost">3400</strong></p>
+        </div>
+
+        <div class="mb-3">
+            <label for="paymentOptions" class="form-label">Payment options</label>
+            <select id="paymentOptions" class="form-select" required>
+                <option value="3 Installments (1000€/each)">3 Installments (1000€/each)</option>
+            </select>
+            <div class="invalid-feedback">
+                Please select a payment option.
+            </div>
+        </div>
+
+        <button type="submit" class="btn btn-primary">Apply for this job</button>
+    </form>
+</div>
                       
                       <div class="tab-pane fade " id="navs-top-messages" role="tabpanel">
                         <div class="col-lg-12 mt-5">
@@ -492,6 +683,9 @@
       <div class="drag-target"></div>
     </div>
     <!-- / Layout wrapper -->
+   
+
+
 
     <!-- Core JS -->
     <!-- build:js assets/vendor/js/core.js -->
@@ -506,6 +700,34 @@
     <script src="assets/assets/vendor/libs/typeahead-js/typeahead.js"></script>
 
     <script src="assets/assets/vendor/js/menu.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+       // Function to toggle the form visibility
+    function showForm() {
+        var form = document.getElementById('slideForm');
+        form.classList.toggle('active');  // Toggle the 'active' class to slide the form in/out
+    }
+        // Show the form when the button is clicked
+        function showForm() {
+        }
+
+        // Form validation script
+        (function () {
+            'use strict'
+            const forms = document.querySelectorAll('.needs-validation')
+
+            Array.from(forms).forEach(function (form) {
+                form.addEventListener('submit', function (event) {
+                    if (!form.checkValidity()) {
+                        event.preventDefault()
+                        event.stopPropagation()
+                    }
+
+                    form.classList.add('was-validated')
+                }, false)
+            })
+        })()
+    </script>
     <!-- endbuild -->
 
     <!-- Vendors JS -->
