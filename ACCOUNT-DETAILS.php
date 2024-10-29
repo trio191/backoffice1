@@ -214,7 +214,7 @@
                               <div class="alert alert-secondary" style="border-radius: 0px">
                                 <p class="mb-0 d-flex" style="color: #00365E">
                                   <i class="ti ti-building me-2"></i>
-                                  <span style="font-size: 16px;">Company</span>
+                                  <span style="font-size: 16px;">Yacht owner / Captain / Cheif / Professional / Surveyor </span>
                                 </p>
                               </div>
                               <div class="row">
@@ -252,14 +252,14 @@
                                     <label class="labelOwn">Job title</label>
                                   </div>
 
-                                </div>
+                            </div>
                               </div>
                               <h4 style="color: #00365E;" class="mt-3 d-flex">
                               <i class="ti ti-building ti-md me-2"></i>
                               <span style="margin-top: 2px;font-size: 18px;">Additional details</span>
-                            </h4>
+                                </h4>
                             <div class="row">
-                                <div class="col-lg-6 mb-4">
+                                <!-- <div class="col-lg-6 mb-4">
                                   <div class="form-group" style="position: relative;">
                                     <input type="text" class="form-control" style="border-radius:0px" placeholder="Boat JBL" name="">
                                     <label class="labelOwn">Company name*</label>
@@ -297,7 +297,7 @@
                                     <input type="text" class="form-control" style="border-radius:0px" placeholder="Address*" name="">
                                   </div>
 
-                                </div>
+                                </div> -->
                                 <div class="col-lg-6 mb-4">
                                   <div class="form-group" style="position: relative;">
                                     <select class="form-control " id="defaultSelect" style="border-radius: 0px">
@@ -328,21 +328,21 @@
                                   </div>
 
                                 </div>
-                                <div class="col-lg-6 mb-4">
+                                <!-- <div class="col-lg-6 mb-4">
                                   <div class="form-group" style="position: relative;">
                                     <input type="text" class="form-control" style="border-radius:0px" placeholder="Company Registration or VAT*" name="">
                                     
                                   </div>
 
-                                </div>
+                                </div> -->
                                 <div class="col-lg-6 mb-4">
                                   <div class="form-group" style="position: relative;">
-                                    <input type="text" class="form-control" style="border-radius:0px" placeholder="Phone number *" name="">
-                                    
+                                    <input type="text" class="form-control" style="border-radius:0px" placeholder="some street name and code" name="">
+                                    <label class="labelOwn">Address</label>
                                   </div>
                                 </div>
                               </div>
-                              <h4 style="color: #00365E;" class="mt-3 d-flex">
+                            <!-- <h4 style="color: #00365E;" class="mt-3 d-flex">
                               <i class="ti ti-building ti-md me-2"></i>
                               <span style="margin-top: 2px;font-size: 18px;">Company details</span>
                             </h4>
@@ -382,11 +382,11 @@
                                     </select>
                                   </div>
 
-                                </div>
-                              </div>
+                                </div> -->
+                              <!-- </div> -->
                               <h4 style="color: #00365E;" class="mt-3 d-flex">
                               <i class="ti ti-bolt ti-md me-2"></i>
-                              <span style="margin-top: 2px;font-size: 18px;">Skills and services i can provide</span>
+                              <span style="margin-top: 2px;font-size: 18px;">Skills and services</span>
                             </h4>
                             <div class="row">
                               <div class="col-lg-12 mb-4">
@@ -453,33 +453,42 @@
                               </div>
                           </div>
                           <div class="card mb-2" style="border: 1px solid #C6D2E7;box-shadow: none !important;background: url('assets/img/card-corner2.png');background-size: 100% 100% ;padding: 20px;border-radius: 0px;color: #00365E;">
-                              <div class="row">
-                                <div class="col-lg-8">
-                                  <p style="font-size: 18px;color: #00365E;">Membership plan</p>
-                                </div>
-                                <div class="col-lg-4">
-                                  <p style="font-size: 14px;color:#00365E" class="pt-1">View plans</p>
-                                </div>
-                              </div>
-                              <center>
-                                <h2 style="color: #00365E">2500€/<small style="font-size: 18px">year</small></h2>
-                                <p style="color:#00365E;font-size: 13px;">Price per metter for each vessel owned.<br>Billed annualy</p>
-                              </center>
-                              <div class="col-lg-12">
-                                <div class="row">
-                                  <div class="col-lg-6">
-                                    <p style="font-size:13px;color: #9CAFD1;">Start date</p>
-                                    <p style="color:#00365E;margin-top: -15px" class="mb-1">Nov 23, 2021</p>
-                                  </div>
-                                  <div class="col-lg-6" style="text-align: right;">
-                                    <p style="font-size:13px;color: #9CAFD1;">Renew date</p>
-                                    <p style="color:#00365E;margin-top: -15px" class="mb-1">Nov 23, 2021</p>
-                                  </div>
-                                </div>
-                                <div class="progress">
-                                    <div class="progress-bar w-75" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
-                                  </div>
-                              </div>
+                          <div class="row">
+  <div class="col-lg-8">
+    <p style="font-size: 18px; color: #00365E;">Forever free plan</p>
+  </div>
+  <div class="col-lg-4 text-end">
+    <p style="font-size: 14px; color: #00365E;" class="pt-1">View plans</p>
+  </div>
+</div>
+<center>
+  <h2 style="color: #00365E; font-size: 40px;">0€/year</h2>
+</center>
+<div class="col-lg-12">
+  <div class="row">
+    <div class="col-lg-6">
+      <p style="font-size:13px; color: #9CAFD1;">Start date</p>
+      <p style="color: #00365E; margin-top: -15px;" class="mb-1">Nov 23, 2021</p>
+    </div>
+    <div class="col-lg-6 text-end">
+      <p style="font-size:13px; color: #9CAFD1;">Renew date</p>
+      <p style="color: #00365E; margin-top: -15px;" class="mb-1">Nov 23, 2022</p>
+    </div>
+  </div>
+  <div class="progress" style="height: 4px; margin-bottom: 15px;">
+    <div class="progress-bar" role="progressbar" style="width: 75%; background-color: #5E8BF7;" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+  </div>
+</div>
+<p style="color: #00365E; font-size: 13px; text-align: center;">Unlock all features and fully enjoy WorldYachtrefit platform:</p>
+<ul style="list-style: none; padding-left: 0; color: #00365E; font-size: 14px;">
+  <li>✔️ Team management</li>
+  <li>✔️ Access to workplan</li>
+  <li>✔️ Referral link</li>
+</ul>
+<center>
+  <button style="background-color: #5E8BF7; color: white; padding: 10px 20px; border: none; border-radius: 5px;">UPGRADE MY PLAN</button>
+</center>
+
                           </div>
                           </div>
                         </div>
