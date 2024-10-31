@@ -229,32 +229,7 @@ body {
           <!-- Navbar -->
 
           <?php include 'layout/header-5.php';?>
-
-          <!-- / Navbar -->
-
-          <!-- Content wrapper -->
-          <div class="content-wrapper">
-            <!-- Content -->
-
-            <div class="container-xxl flex-grow-1 container-p-y">
-              <!-- Layout Demo -->
-              <div class="layout-demo-wrapper" style="background-image: url('assets/img/bg.png'); height: 100px; background-size: 100% 100%; margin-left: -25px; margin-right: -23px; margin-top: -20px; padding: 20px; position: relative;">
-                  <div class="overlay"></div> <!-- Overlay -->
-                  <div class="col-lg-12 text-container"> <!-- Text container -->
-                      <div class="row pt-2">
-                          <div class="col-lg-7 text-white">
-                              <h3 class="text-white">Track progress & incidents</h3>
-                              
-                          </div>
-                          <div class="col-lg-5" style="text-align: right;">
-                            
-                          <div class="container mt-4 text-end">
-    <button type="button" class="btn btn-white" onclick="showForm()" style="border-radius: 0; color: #00365d;">
-        <i class="ti ti-file-analytics me-1"></i> Submit report
-    </button>
-</div>
-
-<div class="report-form" id="reportForm">
+          <div class="report-form" id="reportForm">
     <a href="#" class="back-link" onclick="hideForm()">&larr; Submit report</a>
 
     <h6 class="mt-3">Select a job to report</h6>
@@ -319,6 +294,31 @@ body {
 
     <button class="btn btn-primary w-100 mt-4">Submit report</button>
 </div>
+          <!-- / Navbar -->
+
+          <!-- Content wrapper -->
+          <div class="content-wrapper">
+            <!-- Content -->
+
+            <div class="container-xxl flex-grow-1 container-p-y">
+              <!-- Layout Demo -->
+              <div class="layout-demo-wrapper" style="background-image: url('assets/img/bg.png'); height: 100px; background-size: 100% 100%; margin-left: -25px; margin-right: -23px; margin-top: -20px; padding: 20px; position: relative;">
+                  <div class="overlay"></div> <!-- Overlay -->
+                  <div class="col-lg-12 text-container"> <!-- Text container -->
+                      <div class="row pt-2">
+                          <div class="col-lg-7 text-white">
+                              <h3 class="text-white">Track progress & incidents</h3>
+                              
+                          </div>
+                          <div class="col-lg-5" style="text-align: right;">
+                            
+                          <div class="container mt-4 text-end">
+    <button type="button" class="btn btn-white" onclick="showForm()" style="border-radius: 0; color: #00365d;">
+        <i class="ti ti-file-analytics me-1"></i> Submit report
+    </button>
+</div>
+
+
                         
                           </div>
                       </div>
