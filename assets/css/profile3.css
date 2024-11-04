@@ -1,0 +1,367 @@
+.wrapper-outer {
+    overflow-x: hidden; /* Prevent horizontal scrollbar */
+    overflow-y: hidden; /* Prevent vertical scrollbar */
+    position: relative;
+    color: #3E6785;
+}
+
+.layout-demo-wrapper {
+    max-width: 100%;
+    position: relative;
+    overflow: visible; /* Allow profile image overflow */
+}
+
+.layout-demo-wrapper h3 {
+    margin-left: 10px;
+}
+
+.profile-image {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    border: 5px solid white;
+    object-fit: cover;
+}
+
+.profile-container {
+    position: absolute;
+    top: 200%; /* Center vertically */
+    left: 30px; /* Adjust horizontal positioning */
+    transform: translateY(-50%); /* Center vertically */
+}
+
+.container {
+    max-width: 100%;
+    margin-top: 140px; /* Adjust to fit the profile section height */
+    padding-left: 15px; /* Add some padding to prevent overflow */
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #0F3A4F;
+    opacity: 0.5;
+}
+
+.text-container {
+    position: relative;
+    z-index: 1;
+    padding-left: 160px; /* Offset for profile image */
+}
+
+.vertical-line {
+    border-right: 1px solid #9CAFD1;
+    padding-right: 5px;
+    margin-right: 5px;
+}
+
+.bg-label-primary {
+    background-color: #F2F6FA !important;
+    color: #5E8BF7 !important;
+}
+
+.image-upload-container {
+    position: relative;
+    display: inline-block;
+}
+
+.image-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 120px;
+    height: 120px;
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.upload-icon {
+    color: white;
+    font-size: 24px;
+}
+
+.upload-icon:hover {
+    color: #ccc;
+}
+
+#uploadedImage {
+    display: block;
+    width: 120px;
+    height: 120px;
+    border-radius: 100%;
+    object-fit: cover;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    color: #1E3048;
+}
+
+h4 {
+    font-size: 1.25rem;
+    font-weight: bold;
+}
+
+.section i {
+    font-size: 1.5rem;
+    color: #1E3048;
+}
+
+.section p {
+    color: #6C757D;
+}
+
+.border {
+    color: #1E3048;
+}
+
+strong {
+    font-weight: 600;
+}
+
+
+/* Profile Info */
+.info-section {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    font-size: 14px;
+    color: #4a6c91;
+    margin-left: 110px;
+    position: absolute;
+    margin-top: -70px;
+
+}
+
+.info-item {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.badge-custom {
+    font-weight: 500;
+    font-size: 104px;
+    color: #598abd;
+    background-color: #5d87e7;
+    padding: 5px 10px;
+    border-radius: 8px;
+}
+
+.divider {
+    border-left: 1px solid #d3dbe5;
+    height: 16px;
+    margin: 0 10px;
+}
+
+.profile-line {
+    border: 0;
+    border-top: 1px solid #9CAFD1; /* Light grey color to match */
+    width: 950px; /* Adjust width to match the length of the line in your image */
+    margin: 8px 0; /* Space around the line */
+  }
+
+
+.social-icons {
+    display: flex;
+    gap: 10px; /* Space between icons */
+    margin-left: 230px;
+  }
+  
+.icon-link {
+    color: #00365d; /* Dark blue color for icons */
+    font-size: 20px; /* Adjust size as needed */
+    text-decoration: none;
+  }
+  
+.icon-link:hover {
+    color: #005b9a; /* Slightly lighter blue on hover */
+  }
+  
+  
+
+/* right section  */
+
+
+
+.info-card {
+    background-color: #f8f9fa;
+    border-radius: 10px;
+    padding: 20px;
+    margin-bottom: 20px;
+    border: 1px solid #C6D2E7
+    
+}
+.info-card h5 {
+    font-size: 1rem;
+    font-weight: 300;
+    margin: 0;
+}
+.info-card p {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin: 0;
+    color: #333;
+}
+.skills {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px;
+}
+.skill-tag {
+    /* background-color: #e3e4e6; */
+    background-color: #F2F6FA;
+    color: #85A7F8;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: 0.9rem;
+}
+
+
+/* past job and references */
+
+.job-card {
+    border: 1px solid #e1e4e8;
+    border-radius: 8px;
+    padding: 20px;
+    margin-top: 20px;
+    background-color: #ffffff;
+}
+
+.job-title {
+    font-size: 1.1rem; /* Adjusted size */
+    font-weight: 600;
+    color: #00365E; /* Match title color in the image */
+    margin-bottom: 8px;
+}
+
+.job-description {
+    font-size: 0.9rem;
+    color: #6c757d;
+}
+
+.job-image {
+    width: 100%;
+    height: 105px;
+    border-radius: 1px;
+}
+
+.job-feedback {
+    font-size: 0.9rem;
+    margin-top: 12px;
+    color: #333333;
+}
+
+
+/* Certificasion */
+
+.certification-card {
+    background-color: #F2F6FA;
+    border: none;
+    border-radius: 8px;
+    padding: 12px 25px;
+    margin-bottom: 10px;
+  }
+  /* .verified-badge {
+    /* color: #fff;
+    background-color: #0d6efd; */
+    /* border-radius: 5px;
+    font-size: 0.8rem;
+    padding: 3px 8px;
+  } 
+  */
+  .certification-title {
+    font-size: 1rem;
+    font-weight:500;
+    margin-bottom: 0;
+    color: #095f9d;
+    margin-top: 7px;
+  }
+  .certification-date {
+    font-size: 0.85rem;
+    color: #3772f3;
+    margin-top: 5px;
+    margin-left: 15px   ;
+  }
+  .contact-icons {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+  }
+  .contact-icon {
+    width: 190px;
+    height: 60px;
+    background-color: #f0f3f7;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #7f8c8d;
+  }
+
+
+  /* Yacht Listing  CSS     */
+
+
+  .yacht-section {
+    border-top: 1px solid #e0e0e0;
+    padding-top: 20px;
+  }
+  .yacht-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .yacht-header h5 {
+    font-size: 1rem;
+    font-weight: 600;
+    color: #2c3e50;
+    display: flex;
+    align-items: center;
+    margin: 0;
+  }
+  .yacht-header .yacht-icon {
+    margin-right: 8px;
+  }
+  
+  .yacht-count {
+    background-color: #e9f3fa;
+    color: #2c3e50;
+    font-size: 1rem;
+    padding: 4px 8px;
+    border-radius: 14px;
+    margin-left: 8px;
+  }
+  .carousel-control-prev,
+  .carousel-control-next {
+    color: #2c3e50;
+  }
+
+
+/*  left and right buttons */
+
+.arrow-btn {
+    width: 40px;
+    height: 40px;
+    border: 2px solid rgba(0, 0, 0, 0.2);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: rgba(0, 0, 0, 0.2);
+    font-size: 18px;
+    background-color: transparent;
+    transition: color 0.3s, border-color 0.3s;
+  }
+  .arrow-btn:hover {
+    color: #0d6efd;
+    border-color: #0d6efd;
+  }
