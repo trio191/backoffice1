@@ -6,6 +6,7 @@
     <title>Jobs Detail</title>
     <meta name="description" content="" />
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
     <!-- Favicon -->
     <link rel="icon" type="image/x-icon" href="assets/assets/img/favicon/favicon.ico" />
     <!-- Fonts -->
@@ -30,7 +31,6 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.7.2/font/bootstrap-icons.min.css">
     <!-- Page CSS -->
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
-
     <!-- Helpers -->
     <script src="assets/assets/vendor/js/helpers.js"></script>
     <!-- Template customizer & Theme config files -->
@@ -344,8 +344,6 @@
         box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
       }
 
-   
-
       .incidents {
         stroke: #ff4d4d;
         stroke-dasharray: 15, 100;
@@ -388,6 +386,90 @@
       .icon {
         font-size: 16px;
         margin-right: 5px;
+      }
+
+      #referralList .referral-item {
+        display: flex;
+        align-items: center;
+        padding: 10px 0;
+        border-bottom: 1px solid #f0f0f0;
+      }
+
+      #referralList .referral-item:last-child {
+        border-bottom: none;
+      }
+
+      .referral-item img {
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        object-fit: cover;
+        margin-right: 15px;
+      }
+
+      .referral-item .info {
+        flex-grow: 1;
+      }
+
+      .referral-item .info p {
+        margin: 0;
+      }
+
+      .referral-item .info a {
+        color: #007bff;
+        font-size: 12px;
+      }
+
+      .referral-item .stats {
+        display: flex;
+        align-items: center;
+      }
+
+      .stats .amount {
+        display: flex;
+        align-items: center;
+        margin-right: 15px;
+      }
+
+      .stats .amount span {
+        margin-left: 5px;
+      }
+
+      .stats .views {
+        display: flex;
+        align-items: center;
+      }
+
+      .stats .views span {
+        margin-left: 5px;
+      }
+
+      #platformList .platform-item {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 10px 0;
+        border-bottom: 1px solid #f0f0f0;
+      }
+
+      #platformList .platform-item:last-child {
+        border-bottom: none;
+      }
+
+      .platform-item .icon img {
+        width: 30px;
+        height: 30px;
+        object-fit: contain;
+        margin-right: 15px;
+      }
+
+      .platform-item .info {
+        flex-grow: 1;
+        font-size: 14px;
+      }
+
+      .platform-item .percentage {
+        font-weight: bold;
       }
     </style>
   </head>
@@ -571,228 +653,358 @@
                 </div>
               </div>
             </div>
-            <div class="col-lg-4">
-              <div class="container mt-5">
-                <div class="customer-type-card">
-                  <div class="card-header"> Customer type </div>
-                  <ul class="customer-type-list">
-                    <li class="customer-type-item">
-                      <div class="icon-name">
-                        <div class="icon">🏢</div>
-                        <span>Companies</span>
-                      </div>
-                      <div class="customer-details">
-                        <span class="count">34</span>
-                        <span class="amount">€ 44.553</span>
-                      </div>
-                    </li>
-                    <li class="customer-type-item">
-                      <div class="icon-name">
-                        <div class="icon">⛵</div>
-                        <span>Yacht Owner</span>
-                      </div>
-                      <div class="customer-details">
-                        <span class="count">34</span>
-                        <span class="amount">€ 44.553</span>
-                      </div>
-                    </li>
-                    <li class="customer-type-item">
-                      <div class="icon-name">
-                        <div class="icon">⚓</div>
-                        <span>Captain</span>
-                      </div>
-                      <div class="customer-details">
-                        <span class="count">34</span>
-                        <span class="amount">€ 44.553</span>
-                      </div>
-                    </li>
-                    <li class="customer-type-item">
-                      <div class="icon-name">
-                        <div class="icon">👔</div>
-                        <span>Professional</span>
-                      </div>
-                      <div class="customer-details">
-                        <span class="count">34</span>
-                        <span class="amount">€ 44.553</span>
-                      </div>
-                    </li>
-                    <li class="customer-type-item">
-                      <div class="icon-name">
-                        <div class="icon">✔️</div>
-                        <span>Surveyor</span>
-                      </div>
-                      <div class="customer-details">
-                        <span class="count">34</span>
-                        <span class="amount">€ 44.553</span>
-                      </div>
-                    </li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-            <div class="col-lg-4">
-              <div class="container mt-5">
-                <div class="country-card">
-                  <div class="card-header">
-                    <span>Companies by country</span>
-                    <span class="text-muted">This month &#9662;</span>
+            <div class="container mt-5">
+              <div class="row justify-content-center gy-4">
+                <!-- First Card -->
+                <div class="col-lg-4 d-flex">
+                  <div class="card w-100 p-3">
+                    <div class="card-header text-center">Customer Type</div>
+                    <ul class="list-unstyled mt-3">
+                      <li class="d-flex justify-content-between mb-2">
+                        <div>🏢 Companies</div>
+                        <div>
+                          <span class="count">34</span> | € 44.553
+                        </div>
+                      </li>
+                      <li class="d-flex justify-content-between mb-2">
+                        <div>⛵ Yacht Owner</div>
+                        <div>
+                          <span class="count">34</span> | € 44.553
+                        </div>
+                      </li>
+                      <li class="d-flex justify-content-between mb-2">
+                        <div>⚓ Captain</div>
+                        <div>
+                          <span class="count">34</span> | € 44.553
+                        </div>
+                      </li>
+                      <li class="d-flex justify-content-between mb-2">
+                        <div>👔 Professional</div>
+                        <div>
+                          <span class="count">34</span> | € 44.553
+                        </div>
+                      </li>
+                      <li class="d-flex justify-content-between mb-2">
+                        <div>✔️ Surveyor</div>
+                        <div>
+                          <span class="count">34</span> | € 44.553
+                        </div>
+                      </li>
+                    </ul>
                   </div>
-                  <ul class="country-list">
-                    <li class="country-item">
-                      <div class="country-info">
-                        <img src="https://via.placeholder.com/30" alt="Portugal Flag" class="flag">
-                        <div class="country-details">
-                          <span class="amount">€ 22,435</span>
-                          <span class="country-name">Portugal</span>
-                        </div>
-                      </div>
-                      <span class="growth">▲ 10.3%</span>
-                    </li>
-                    <li class="country-item">
-                      <div class="country-info">
-                        <img src="https://via.placeholder.com/30" alt="France Flag" class="flag">
-                        <div class="country-details">
-                          <span class="amount">€ 22,435</span>
-                          <span class="country-name">France</span>
-                        </div>
-                      </div>
-                      <span class="growth">▲ 10.3%</span>
-                    </li>
-                    <li class="country-item">
-                      <div class="country-info">
-                        <img src="https://via.placeholder.com/30" alt="Spain Flag" class="flag">
-                        <div class="country-details">
-                          <span class="amount">€ 22,435</span>
-                          <span class="country-name">Spain</span>
-                        </div>
-                      </div>
-                      <span class="growth">▲ 10.3%</span>
-                    </li>
-                    <li class="country-item">
-                      <div class="country-info">
-                        <img src="https://via.placeholder.com/30" alt="United States Flag" class="flag">
-                        <div class="country-details">
-                          <span class="amount">€ 22,435</span>
-                          <span class="country-name">United States</span>
-                        </div>
-                      </div>
-                      <span class="growth">▲ 10.3%</span>
-                    </li>
-                  </ul>
                 </div>
-              </div>
-            </div>
-            <div class="col-lg-4">
-                <div class="mt-5 d-flex justify-content-center align-items-center ">
-                <div class="report-card p-3 text-center">
-                    <h5>Reports performance</h5>
-                    <center>
-                    <div style="width:210px">
-                        <canvas id="myDoughnutChart"></canvas>
+                <!-- Second Card -->
+                <div class="col-lg-4 d-flex">
+                  <!-- <div class="container d-flex justify-content-center mt-5"> -->
+                  <div style="border: 1px solid #ddd; border-radius: 8px; padding: 16px; max-width: 350px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); background-color: #fff;">
+                    <div style="font-weight: bold; display: flex; justify-content: space-between; color: #0073e6; margin-bottom: 10px;">
+                      <span>Companies by country</span>
+                      <span style="color: #6c757d;">This month &#9662;</span>
                     </div>
-    </center>
-                    <div class="details mt-3">
-                    <div class="d-flex justify-content-between align-items-center">
-                        <span class="icon">⚠️</span>
-                        <span>Incidents</span>
+                    <ul class="list-unstyled">
+                      <li style="display: flex; justify-content: space-between; align-items: center; padding: 8px 0; border-bottom: 1px solid #f1f1f1;">
+                        <div style="display: flex; align-items: center;">
+                          <img src="https://via.placeholder.com/30x20.png?text=PT" alt="Portugal Flag" style="width: 30px; height: 20px; border-radius: 3px; margin-right: 10px;">
+                          <div style="display: flex; flex-direction: column;">
+                            <span style="font-weight: bold; color: #333;">€ 22,435</span>
+                            <span style="color: #777; font-size: 14px;">Portugal</span>
+                          </div>
+                        </div>
+                        <span style="color: #28a745; font-weight: bold; font-size: 14px;">▲ 10.3%</span>
+                      </li>
+                      <li style="display: flex; justify-content: space-between; align-items: center; padding: 8px 0; border-bottom: 1px solid #f1f1f1;">
+                        <div style="display: flex; align-items: center;">
+                          <img src="https://via.placeholder.com/30x20.png?text=FR" alt="France Flag" style="width: 30px; height: 20px; border-radius: 3px; margin-right: 10px;">
+                          <div style="display: flex; flex-direction: column;">
+                            <span style="font-weight: bold; color: #333;">€ 22,435</span>
+                            <span style="color: #777; font-size: 14px;">France</span>
+                          </div>
+                        </div>
+                        <span style="color: #28a745; font-weight: bold; font-size: 14px;">▲ 10.3%</span>
+                      </li>
+                      <li style="display: flex; justify-content: space-between; align-items: center; padding: 8px 0; border-bottom: 1px solid #f1f1f1;">
+                        <div style="display: flex; align-items: center;">
+                          <img src="https://via.placeholder.com/30x20.png?text=ES" alt="Spain Flag" style="width: 30px; height: 20px; border-radius: 3px; margin-right: 10px;">
+                          <div style="display: flex; flex-direction: column;">
+                            <span style="font-weight: bold; color: #333;">€ 22,435</span>
+                            <span style="color: #777; font-size: 14px;">Spain</span>
+                          </div>
+                        </div>
+                        <span style="color: #28a745; font-weight: bold; font-size: 14px;">▲ 10.3%</span>
+                      </li>
+                      <li style="display: flex; justify-content: space-between; align-items: center; padding: 8px 0;">
+                        <div style="display: flex; align-items: center;">
+                          <img src="https://via.placeholder.com/30x20.png?text=US" alt="United States Flag" style="width: 30px; height: 20px; border-radius: 3px; margin-right: 10px;">
+                          <div style="display: flex; flex-direction: column;">
+                            <span style="font-weight: bold; color: #333;">€ 22,435</span>
+                            <span style="color: #777; font-size: 14px;">United States</span>
+                          </div>
+                        </div>
+                        <span style="color: #28a745; font-weight: bold; font-size: 14px;">▲ 10.3%</span>
+                      </li>
+                    </ul>
+                  </div>
+                  <!-- </div> -->
+                </div>
+                <!-- Third Card -->
+                <div class="col-lg-4 d-flex">
+                  <div class="card w-100 p-3 text-center">
+                    <div class="card-header">Reports Performance</div>
+                    <canvas id="myDoughnutChart" style="max-width: 150px; margin: 10px auto;"></canvas>
+                    <div class="mt-3">
+                      <div class="d-flex justify-content-between mb-2">
+                        <span>⚠️ Incidents</span>
                         <span>55</span>
-                    </div>
-                    <div class="d-flex justify-content-between align-items-center">
-                        <span class="icon">📂</span>
-                        <span>Progress</span>
+                      </div>
+                      <div class="d-flex justify-content-between mb-2">
+                        <span>📂 Progress</span>
                         <span>332</span>
-                    </div>
-                    <div class="d-flex justify-content-between align-items-center">
-                        <span class="icon">🧑‍💼</span>
-                        <span>Surveyors</span>
+                      </div>
+                      <div class="d-flex justify-content-between mb-2">
+                        <span>🧑‍💼 Surveyors</span>
                         <span>144</span>
+                      </div>
                     </div>
-                    </div>
+                  </div>
                 </div>
+                <div style= "margin-top: 20px;" class="row">
+    <div class="col-lg-8">
+        <!-- <div class="container my-4"> -->
+        <div class="card p-3">
+            <div class="d-flex justify-content-between align-items-center">
+                <h5 class="mb-0">Top Referral Leads</h5>
+                <div class="dropdown">
+                    <button class="btn btn-sm btn-light dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> This Month </button>
+                    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                        <a class="dropdown-item" href="#">This Month</a>
+                        <a class="dropdown-item" href="#">Last Month</a>
+                        <a class="dropdown-item" href="#">This Year</a>
+                    </div>
                 </div>
             </div>
-            <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-            <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.2/dist/umd/popper.min.js"></script>
-            <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-            <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-            <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.2/dist/umd/popper.min.js"></script>
-            <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-            <!-- Bootstrap JS and dependencies -->
-            <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-            <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.2/dist/umd/popper.min.js"></script>
-            <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-            <script>
-              const ctx = document.getElementById('salesChart').getContext('2d');
-              new Chart(ctx, {
-                type: 'bar',
-                data: {
-                  labels: ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'],
-                  datasets: [{
-                    label: 'Sales',
-                    data: [20000, 25000, 15000, 30000, 28000, 35000, 60000, 5000, 0, 0, 0, 0],
-                    backgroundColor: 'rgba(54, 162, 235, 0.8)',
-                    borderRadius: 8
-                  }]
-                },
-                options: {
-                  responsive: true,
-                  plugins: {
-                    legend: {
-                      display: false
-                    }
-                  },
-                  scales: {
-                    y: {
-                      beginAtZero: true,
-                      ticks: {
-                        stepSize: 10000,
-                        callback: function(value) {
-                          return value + 'k';
+            <hr>
+            <div id="referralList">
+                <!-- Dynamic content will be loaded here -->
+            </div>
+        </div>
+    </div>
+
+    <div style= "height:600px;" class="col-lg-4">
+        <!-- <div class="container my-4"> -->
+        <div class="card p-3">
+            <div class="d-flex justify-content-between align-items-center">
+                <h5 class="mb-0">Platform Access</h5>
+                <div class="dropdown">
+                    <button class="btn btn-sm btn-light dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> Browser </button>
+                    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                        <a class="dropdown-item" href="#">Browser</a>
+                        <a class="dropdown-item" href="#">OS</a>
+                        <a class="dropdown-item" href="#">Device</a>
+                    </div>
+                </div>
+            </div>
+            <hr>
+            <div id="platformList">
+                <!-- Dynamic content will be loaded here -->
+            </div>
+        </div>
+        <!-- </div> -->
+    </div>
+</div>
+
+                    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+                    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.2/dist/js/bootstrap.bundle.min.js"></script>
+                    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+                    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.2/dist/js/bootstrap.bundle.min.js"></script>
+                    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+                    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.2/dist/umd/popper.min.js"></script>
+                    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+                    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+                    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.2/dist/umd/popper.min.js"></script>
+                    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+                    <!-- Bootstrap JS and dependencies -->
+                    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+                    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.2/dist/umd/popper.min.js"></script>
+                    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+                    <script>
+                      document.addEventListener("DOMContentLoaded", function() {
+                        const platforms = [{
+                          name: "Google Chrome",
+                          percentage: "56%",
+                          icon: "https://via.placeholder.com/30"
+                        }, {
+                          name: "Safari",
+                          percentage: "40%",
+                          icon: "https://via.placeholder.com/30"
+                        }, {
+                          name: "Opera",
+                          percentage: "33%",
+                          icon: "https://via.placeholder.com/30"
+                        }, {
+                          name: "Microsoft Edge",
+                          percentage: "30%",
+                          icon: "https://via.placeholder.com/30"
+                        }, {
+                          name: "Brave",
+                          percentage: "22%",
+                          icon: "https://via.placeholder.com/30"
+                        }, {
+                          name: "Firefox",
+                          percentage: "22%",
+                          icon: "https://via.placeholder.com/30"
+                        }, {
+                          name: "Samsung Internet",
+                          percentage: "22%",
+                          icon: "https://via.placeholder.com/30"
+                        }, ];
+                        const platformList = document.getElementById("platformList");
+                        platforms.forEach(platform => {
+                          const platformItem = document.createElement("div");
+                          platformItem.classList.add("platform-item");
+                          platformItem.innerHTML = `
+            
+																												<div class="d-flex align-items-center">
+																													<div class="icon">
+																														<img src="${platform.icon}" alt="${platform.name}">
+																														</div>
+																														<div class="info">${platform.name}</div>
+																													</div>
+																													<div class="percentage">${platform.percentage}</div>
+        `;
+                          platformList.appendChild(platformItem);
+                        });
+                      });
+                      document.addEventListener("DOMContentLoaded", function() {
+                        const referrals = [{
+                          name: "Tim Burton",
+                          link: "worldyachtrefit/tim3225",
+                          amount: "44.52€",
+                          views: 13,
+                          image: "https://via.placeholder.com/40"
+                        }, {
+                          name: "Tim Burton",
+                          link: "worldyachtrefit/tim3225",
+                          amount: "44.52€",
+                          views: 13,
+                          image: "https://via.placeholder.com/40"
+                        }, {
+                          name: "Tim Burton",
+                          link: "worldyachtrefit/tim3225",
+                          amount: "44.52€",
+                          views: 13,
+                          image: "https://via.placeholder.com/40"
+                        }, {
+                          name: "Tim Burton",
+                          link: "worldyachtrefit/tim3225",
+                          amount: "44.52€",
+                          views: 13,
+                          image: "https://via.placeholder.com/40"
+                        }, {
+                          name: "Tim Burton",
+                          link: "worldyachtrefit/tim3225",
+                          amount: "44.52€",
+                          views: 13,
+                          image: "https://via.placeholder.com/40"
+                        }, ];
+                        const referralList = document.getElementById("referralList");
+                        referrals.forEach(referral => {
+                          const referralItem = document.createElement("div");
+                          referralItem.classList.add("referral-item");
+                          referralItem.innerHTML = `
+            
+																													<img src="${referral.image}" alt="${referral.name}">
+																														<div class="info">
+																															<p>
+																																<strong>${referral.name}</strong>
+																															</p>
+																															<a href="#">All fix LDA</a>
+																															<p>${referral.link}</p>
+																														</div>
+																														<div class="stats">
+																															<div class="amount">
+																																<i class="fas fa-coins"></i>
+																																<span>${referral.amount}</span>
+																															</div>
+																															<div class="views">
+																																<i class="fas fa-eye"></i>
+																																<span>${referral.views}</span>
+																															</div>
+																														</div>
+        `;
+                          referralList.appendChild(referralItem);
+                        });
+                      });
+                      const ctx = document.getElementById('salesChart').getContext('2d');
+                      new Chart(ctx, {
+                        type: 'bar',
+                        data: {
+                          labels: ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'],
+                          datasets: [{
+                            label: 'Sales',
+                            data: [20000, 25000, 15000, 30000, 28000, 35000, 60000, 5000, 0, 0, 0, 0],
+                            backgroundColor: 'rgba(54, 162, 235, 0.8)',
+                            borderRadius: 8
+                          }]
+                        },
+                        options: {
+                          responsive: true,
+                          plugins: {
+                            legend: {
+                              display: false
+                            }
+                          },
+                          scales: {
+                            y: {
+                              beginAtZero: true,
+                              ticks: {
+                                stepSize: 10000,
+                                callback: function(value) {
+                                  return value + 'k';
+                                }
+                              }
+                            }
+                          }
                         }
-                      }
-                    }
-                  }
-                }
-              });
-            </script>
-            <script>
-              const ctxxx = document.getElementById('myDoughnutChart');
-              new Chart(ctxxx, {
-                type: 'doughnut',
-                data: {
-                  labels: ['Red', 'Blue', 'Green'],
-                  datasets: [{
-                    label: 'Categories',
-                    data: [30, 40, 30], // Adjust values as needed
-                    backgroundColor: ['rgba(255, 99, 132, 0.6)', // Red
-                      'rgba(54, 162, 235, 0.6)', // Blue
-                      'rgba(75, 192, 192, 0.6)' // Green
-                    ],
-                    borderColor: ['rgba(255, 99, 132, 1)', // Darker Red border
-                      'rgba(54, 162, 235, 1)', // Darker Blue border
-                      'rgba(75, 192, 192, 1)' // Darker Green border
-                    ],
-                    borderWidth: 1
-                  }]
-                },
-                options: {
-                  responsive: true,
-                  cutout: '50%', // Controls the doughnut hole size; adjust if needed
-                  plugins: {
-                    legend: {
-                      position: 'top',
-                    },
-                    tooltip: {
-                      callbacks: {
-                        label: function(tooltipItem) {
-                          return tooltipItem.label + ': ' + tooltipItem.raw + '%';
+                      });
+                    </script>
+                    <script>
+                      const ctxxx = document.getElementById('myDoughnutChart');
+                      new Chart(ctxxx, {
+                        type: 'doughnut',
+                        data: {
+                          labels: ['Red', 'Blue', 'Green'],
+                          datasets: [{
+                            label: 'Categories',
+                            data: [30, 40, 30], // Adjust values as needed
+                            backgroundColor: ['rgba(255, 99, 132, 0.6)', // Red
+                              'rgba(54, 162, 235, 0.6)', // Blue
+                              'rgba(75, 192, 192, 0.6)' // Green
+                            ],
+                            borderColor: ['rgba(255, 99, 132, 1)', // Darker Red border
+                              'rgba(54, 162, 235, 1)', // Darker Blue border
+                              'rgba(75, 192, 192, 1)' // Darker Green border
+                            ],
+                            borderWidth: 1
+                          }]
+                        },
+                        options: {
+                          responsive: true,
+                          cutout: '50%', // Controls the doughnut hole size; adjust if needed
+                          plugins: {
+                            legend: {
+                              position: 'top',
+                            },
+                            tooltip: {
+                              callbacks: {
+                                label: function(tooltipItem) {
+                                  return tooltipItem.label + ': ' + tooltipItem.raw + '%';
+                                }
+                              }
+                            }
+                          }
                         }
-                      }
-                    }
-                  }
-                }
-              });
-            </script>
-            <script src="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.js"></script>
+                      });
+                    </script>
+                    <script src="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.js"></script>
   </body>
 </html>
