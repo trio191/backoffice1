@@ -761,7 +761,7 @@
                         <span>332</span>
                       </div>
                       <div class="d-flex justify-content-between mb-2">
-                        <span>🧑‍💼 Surveyors</span>
+                        <span>🧑 Surveyors</span>
                         <span>144</span>
                       </div>
                     </div>
@@ -789,7 +789,7 @@
         </div>
     </div>
 
-    <div style= "height:600px;" class="col-lg-4">
+    <div style= "height:700px;" class="col-lg-4">
         <!-- <div class="container my-4"> -->
         <div class="card p-3">
             <div class="d-flex justify-content-between align-items-center">
@@ -855,6 +855,11 @@
                         }, {
                           name: "Samsung Internet",
                           percentage: "22%",
+                          icon: "https://via.placeholder.com/30"
+                        },
+                        {
+                          name: "Safari",
+                          percentage: "40%",
                           icon: "https://via.placeholder.com/30"
                         }, ];
                         const platformList = document.getElementById("platformList");
@@ -972,7 +977,7 @@
                       new Chart(ctxxx, {
                         type: 'doughnut',
                         data: {
-                          labels: ['Red', 'Blue', 'Green'],
+                          // labels: ['Red', 'Blue', 'Green'],
                           datasets: [{
                             label: 'Categories',
                             data: [30, 40, 30], // Adjust values as needed
