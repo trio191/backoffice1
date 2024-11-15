@@ -41,7 +41,7 @@
             background-color: #f8f9fa;
         } */
         .card {
-            border-radius: 12px;
+            
             border: 1px solid #e9ecef;
             box-shadow: 0 1px 3px rgba(0,0,0,0.1);
             margin-top: 20px;
@@ -89,7 +89,7 @@
             color: #991b1b;
         }
         .card {
-            border-radius: 12px;
+           
             border: 1px solid #e9ecef;
             background: white;
             box-shadow: 0 1px 3px rgba(0,0,0,0.1);
@@ -233,7 +233,7 @@
                                 <option>Current Year</option>
                             </select>
                         </div>
-                        <canvas id="salesChart" height="300"></canvas>
+                        <canvas id="salesChart" ></canvas>
                     </div>
                 </div>
             </div>
@@ -259,84 +259,199 @@
                             </div>
                             <!-- Repeat for other customers -->
                         </div>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Customer Type -->
-            <div class="col-12 col-md-4">
-                <div class="card">
-                    <div class="card-body">
-                        <h5 class="card-title mb-4">Customer type</h5>
-                        <div class="d-flex flex-column gap-3">
-                            <div class="d-flex justify-content-between align-items-center">
+                        <div style = "margin-top: 10px;" class="d-flex flex-column gap-3">
+                            <div class="d-flex align-items-center justify-content-between">
                                 <div class="d-flex align-items-center gap-2">
-                                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                        <path d="M21 12a9 9 0 01-9 9m9-9a9 9 0 00-9-9m9 9H3m9 9a9 9 0 01-9-9m9 9c1.657 0 3-4.03 3-9s-1.343-9-3-9m0 18c-1.657 0-3-4.03-3-9s1.343-9 3-9m-9 9a9 9 0 019-9"/>
-                                    </svg>
-                                    <span>Companies</span>
+                                    <img src="https://via.placeholder.com/40" class="avatar" alt="Tim Cook">
+                                    <div>
+                                        <div class="fw-medium">Tim Cook</div>
+                                        <div class="text-muted small">Chief Engineer</div>
+                                    </div>
                                 </div>
-                                <div class="d-flex align-items-center gap-2">
-                                    <span>34</span>
-                                    <span class="text-muted">€44,553</span>
-                                </div>
+                                <div class="fw-medium">€4500</div>
                             </div>
-                            <!-- Repeat for other types -->
+                            <!-- Repeat for other customers -->
+                        </div>
+                        <div style = "margin-top: 10px;" class="d-flex flex-column gap-3">
+                            <div class="d-flex align-items-center justify-content-between">
+                                <div class="d-flex align-items-center gap-2">
+                                    <img src="https://via.placeholder.com/40" class="avatar" alt="Tim Cook">
+                                    <div>
+                                        <div class="fw-medium">Tim Cook</div>
+                                        <div class="text-muted small">Chief Engineer</div>
+                                    </div>
+                                </div>
+                                <div class="fw-medium">€4500</div>
+                            </div>
+                            <!-- Repeat for other customers -->
+                        </div>
+                        <div style = "margin-top: 10px;" class="d-flex flex-column gap-3">
+                            <div class="d-flex align-items-center justify-content-between">
+                                <div class="d-flex align-items-center gap-2">
+                                    <img src="https://via.placeholder.com/40" class="avatar" alt="Tim Cook">
+                                    <div>
+                                        <div class="fw-medium">Tim Cook</div>
+                                        <div class="text-muted small">Chief Engineer</div>
+                                    </div>
+                                </div>
+                                <div class="fw-medium">€4500</div>
+                            </div>
+                            <!-- Repeat for other customers -->
+                        </div>
+                        <div style = "margin-top: 10px;" class="d-flex flex-column gap-3">
+                            <div class="d-flex align-items-center justify-content-between">
+                                <div class="d-flex align-items-center gap-2">
+                                    <img src="https://via.placeholder.com/40" class="avatar" alt="Tim Cook">
+                                    <div>
+                                        <div class="fw-medium">Tim Cook</div>
+                                        <div class="text-muted small">Chief Engineer</div>
+                                    </div>
+                                </div>
+                                <div class="fw-medium">€4500</div>
+                            </div>
+                            <!-- Repeat for other customers -->
+                        </div>
+                        <div style = "margin-top: 10px;" class="d-flex flex-column gap-3">
+                            <div class="d-flex align-items-center justify-content-between">
+                                <div class="d-flex align-items-center gap-2">
+                                    <img src="https://via.placeholder.com/40" class="avatar" alt="Tim Cook">
+                                    <div>
+                                        <div class="fw-medium">Tim Cook</div>
+                                        <div class="text-muted small">Chief Engineer</div>
+                                    </div>
+                                </div>
+                                <div class="fw-medium">€4500</div>
+                            </div>
+                            <!-- Repeat for other customers -->
                         </div>
                     </div>
                 </div>
             </div>
 
-            <!-- Companies by Country -->
-            <div class="col-12 col-md-4">
-                <div class="card">
-                    <div class="card-body">
-                        <div class="d-flex justify-content-between align-items-center mb-4">
-                            <h5 class="card-title mb-0">Companies by country</h5>
-                            <select class="form-select form-select-sm w-auto">
-                                <option>This month</option>
-                            </select>
-                        </div>
-                        <div class="d-flex flex-column gap-3">
-                            <div class="d-flex justify-content-between align-items-center">
-                                <div class="d-flex align-items-center gap-2">
-                                    <img src="https://via.placeholder.com/24" class="country-flag" alt="Portugal">
-                                    <span>Portugal</span>
-                                </div>
-                                <div class="d-flex align-items-center gap-2">
-                                    <span>€22,435</span>
-                                    <span class="text-success">↑10.3%</span>
-                                </div>
-                            </div>
-                            <!-- Repeat for other countries -->
-                        </div>
+            <div style= "margin-top: 20px;" class="container-fluid">
+        <div class="row g-4">
+            <!-- Customer Type Card -->
+            <div class="col-md-4">
+                <div style="background: white; border-radius: 8px; padding: 20px; height: 100%; box-shadow: 0 1px 3px rgba(0,0,0,0.1);">
+                    <h2 style="color: #1e293b; font-size: 16px; font-weight: 500; margin-bottom: 20px;">Customer type</h2>
+                    <div style="display: flex; align-items: center; padding: 8px 0; color: #64748b;">
+                        <svg style="width: 24px; height: 24px; margin-right: 12px; color: #64748b;" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M3 9h18v10a2 2 0 01-2 2H5a2 2 0 01-2-2V9zm0 0V5a2 2 0 012-2h14a2 2 0 012 2v4"></path>
+                        </svg>
+                        <span>Companies</span>
+                        <span style="margin-left: auto;">34</span>
+                        <span style="margin-left: 16px; width: 80px; text-align: right;">€ 44,553</span>
+                    </div>
+                    <div style=" margin-top: 30px; display: flex; align-items: center; padding: 8px 0; color: #64748b;">
+                        <svg style="width: 24px; height: 24px; margin-right: 12px; color: #64748b;" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M13 7h8m0 0v8m0-8l-8 8-4-4-6 6"></path>
+                        </svg>
+                        <span>Yacht Owner</span>
+                        <span style="margin-left: auto;">34</span>
+                        <span style="margin-left: 16px; width: 80px; text-align: right;">€ 44,553</span>
+                    </div>
+                    <div style=" margin-top: 30px; display: flex; align-items: center; padding: 8px 0; color: #64748b;">
+                        <svg style="width: 24px; height: 24px; margin-right: 12px; color: #64748b;" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z"></path>
+                        </svg>
+                        <span>Captain</span>
+                        <span style="margin-left: auto;">34</span>
+                        <span style="margin-left: 16px; width: 80px; text-align: right;">€ 44,553</span>
+                    </div>
+                    <div style=" margin-top: 30px; display: flex; align-items: center; padding: 8px 0; color: #64748b;">
+                        <svg style="width: 24px; height: 24px; margin-right: 12px; color: #64748b;" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M21 13.255A23.931 23.931 0 0112 15c-3.183 0-6.22-.62-9-1.745M16 6V4a2 2 0 00-2-2h-4a2 2 0 00-2 2v2m4 6h.01M5 20h14a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path>
+                        </svg>
+                        <span>Professional</span>
+                        <span style="margin-left: auto;">34</span>
+                        <span style="margin-left: 16px; width: 80px; text-align: right;">€ 44,553</span>
+                    </div>
+                    <div style=" margin-top: 30px; display: flex; align-items: center; padding: 8px 0; color: #64748b;">
+                        <svg style="width: 24px; height: 24px; margin-right: 12px; color: #64748b;" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"></path>
+                            <path d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z"></path>
+                        </svg>
+                        <span>Surveyor</span>
+                        <span style="margin-left: auto;">34</span>
+                        <span style="margin-left: 16px; width: 80px; text-align: right;">€ 44,553</span>
                     </div>
                 </div>
             </div>
 
-            <!-- Reports Performance -->
-            <div class="col-12 col-md-4">
-                <div class="card">
-                    <div class="card-body text-center">
-                        <h5 class="card-title mb-4">Reports performance</h5>
-                        <canvas id="reportsChart" height="200"></canvas>
-                        <div class="mt-4">
-                            <div class="d-flex justify-content-between mb-2">
-                                <span class="text-muted">Incidents</span>
-                                <span>55</span>
-                            </div>
-                            <div class="d-flex justify-content-between mb-2">
-                                <span class="text-muted">Progress</span>
-                                <span>332</span>
-                            </div>
-                            <div class="d-flex justify-content-between">
-                                <span class="text-muted">Surveyors</span>
-                                <span>144</span>
-                            </div>
-                        </div>
+            <!-- Companies by Country Card -->
+            <div class="col-md-4">
+                <div style="background: white; border-radius: 8px; padding: 20px; height: 100%; box-shadow: 0 1px 3px rgba(0,0,0,0.1);">
+                    <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 20px;">
+                        <h2 style="color: #1e293b; font-size: 16px; font-weight: 500; margin-bottom: 0;">Companies by country</h2>
+                        <select style="font-size: 14px; color: #64748b; border: none; background: transparent; cursor: pointer;">
+                            <option>this month</option>
+                        </select>
+                    </div>
+                    <div style=" margin-top: 30px; display: flex; align-items: center; padding: 8px 0;">
+                        <img src="/placeholder.svg?height=24&width=24" alt="Portugal" style="width: 24px; height: 24px; margin-right: 12px; border-radius: 50%;">
+                        <span style="color: #64748b; font-size: 14px;">Portugal</span>
+                        <span style="margin-left: auto; color: #64748b;">€ 22,435</span>
+                        <span style="margin-left: 16px; color: #10b981; width: 60px; text-align: right;">↑ 10.3%</span>
+                    </div>
+                    <div style=" margin-top: 30px; display: flex; align-items: center; padding: 8px 0;">
+                        <img src="/placeholder.svg?height=24&width=24" alt="France" style="width: 24px; height: 24px; margin-right: 12px; border-radius: 50%;">
+                        <span style="color: #64748b; font-size: 14px;">France</span>
+                        <span style="margin-left: auto; color: #64748b;">€ 22,435</span>
+                        <span style="margin-left: 16px; color: #10b981; width: 60px; text-align: right;">↑ 10.3%</span>
+                    </div>
+                    <div style=" margin-top: 30px; display: flex; align-items: center; padding: 8px 0;">
+                        <img src="/placeholder.svg?height=24&width=24" alt="Spain" style="width: 24px; height: 24px; margin-right: 12px; border-radius: 50%;">
+                        <span style="color: #64748b; font-size: 14px;">Spain</span>
+                        <span style="margin-left: auto; color: #64748b;">€ 22,435</span>
+                        <span style="margin-left: 16px; color: #10b981; width: 60px; text-align: right;">↑ 10.3%</span>
+                    </div>
+                    <div style=" margin-top: 30px; display: flex; align-items: center; padding: 8px 0;">
+                        <img src="/placeholder.svg?height=24&width=24" alt="United States" style="width: 24px; height: 24px; margin-right: 12px; border-radius: 50%;">
+                        <span style="color: #64748b; font-size: 14px;">United States</span>
+                        <span style="margin-left: auto; color: #64748b;">€ 22,435</span>
+                        <span style="margin-left: 16px; color: #10b981; width: 60px; text-align: right;">↑ 10.3%</span>
                     </div>
                 </div>
             </div>
+
+            <!-- Reports Performance Card -->
+            <div class="col-md-4">
+                <div style="background: white; border-radius: 8px; padding: 20px; height: 100%; box-shadow: 0 1px 3px rgba(0,0,0,0.1);">
+                    <h2 style="color: #1e293b; font-size: 16px; font-weight: 500; margin-bottom: 20px;">Reports performance</h2>
+                    <div style="position: relative; width: 200px; height: 200px; margin: 0 auto 20px;">
+                        <canvas id="performanceChart"></canvas>
+                        <div style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); text-align: center;">
+                            <div style="font-size: 24px; font-weight: 500; color: #1e293b;">566</div>
+                            <div style="font-size: 14px; color: #64748b;">reports</div>
+                        </div>
+                    </div>
+                    <div style="display: flex; align-items: center; margin-top: 16px; padding: 4px 0;">
+                        <svg style="width: 20px; height: 20px; margin-right: 8px;" viewBox="0 0 24 24" fill="none" stroke="#ef4444" stroke-width="2">
+                            <path d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z"></path>
+                        </svg>
+                        <span style="color: #64748b; flex-grow: 1;">Incidents</span>
+                        <span style="color: #ef4444; font-weight: 500;">55</span>
+                    </div>
+                    <div style="display: flex; align-items: center; margin-top: 16px; padding: 4px 0;">
+                        <svg style="width: 20px; height: 20px; margin-right: 8px;" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                        </svg>
+                        <span style="color: #64748b; flex-grow: 1;">Progress</span>
+                        <span style="color: #64748b; font-weight: 500;">332</span>
+                    </div>
+                    <div style="display: flex; align-items: center; margin-top: 16px; padding: 4px 0;">
+                        <svg style="width: 20px; height: 20px; margin-right: 8px;" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"></path>
+                            <path d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z"></path>
+                        </svg>
+                        <span style="color: #64748b; flex-grow: 1;">Surveyors</span>
+                        <span style="color: #64748b; font-weight: 500;">144</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
             <div class="container">
         <div class="row g-4">
             <!-- Top Referral Leads -->
@@ -358,6 +473,90 @@
                         
                         <!-- Referral Items -->
                         <div class="referral-list">
+                            <div class="referral-item d-flex align-items-center justify-content-between">
+                                <div class="d-flex align-items-center gap-3">
+                                    <img src="https://via.placeholder.com/32" class="avatar" alt="Tim Burton">
+                                    <div>
+                                        <div class="fw-medium">Tim Burton</div>
+                                        <div class="text-muted small">All fit LDA</div>
+                                    </div>
+                                </div>
+                                <div class="text-end">
+                                    <div class="small text-primary-blue">worldyachtrefit/tim3225</div>
+                                    <div class="d-flex align-items-center gap-2 text-muted">
+                                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                            <circle cx="12" cy="12" r="10"></circle>
+                                            <path d="M12 6v6l4 2"></path>
+                                        </svg>
+                                        44.520€
+                                        <span class="badge bg-light text-muted">13</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Repeat 5 more times for other items -->
+                            <div class="referral-item d-flex align-items-center justify-content-between">
+                                <div class="d-flex align-items-center gap-3">
+                                    <img src="https://via.placeholder.com/32" class="avatar" alt="Tim Burton">
+                                    <div>
+                                        <div class="fw-medium">Tim Burton</div>
+                                        <div class="text-muted small">All fit LDA</div>
+                                    </div>
+                                </div>
+                                <div class="text-end">
+                                    <div class="small text-primary-blue">worldyachtrefit/tim3225</div>
+                                    <div class="d-flex align-items-center gap-2 text-muted">
+                                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                            <circle cx="12" cy="12" r="10"></circle>
+                                            <path d="M12 6v6l4 2"></path>
+                                        </svg>
+                                        44.520€
+                                        <span class="badge bg-light text-muted">13</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Repeat 5 more times for other items -->
+                            <div class="referral-item d-flex align-items-center justify-content-between">
+                                <div class="d-flex align-items-center gap-3">
+                                    <img src="https://via.placeholder.com/32" class="avatar" alt="Tim Burton">
+                                    <div>
+                                        <div class="fw-medium">Tim Burton</div>
+                                        <div class="text-muted small">All fit LDA</div>
+                                    </div>
+                                </div>
+                                <div class="text-end">
+                                    <div class="small text-primary-blue">worldyachtrefit/tim3225</div>
+                                    <div class="d-flex align-items-center gap-2 text-muted">
+                                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                            <circle cx="12" cy="12" r="10"></circle>
+                                            <path d="M12 6v6l4 2"></path>
+                                        </svg>
+                                        44.520€
+                                        <span class="badge bg-light text-muted">13</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Repeat 5 more times for other items -->
+                            <div class="referral-item d-flex align-items-center justify-content-between">
+                                <div class="d-flex align-items-center gap-3">
+                                    <img src="https://via.placeholder.com/32" class="avatar" alt="Tim Burton">
+                                    <div>
+                                        <div class="fw-medium">Tim Burton</div>
+                                        <div class="text-muted small">All fit LDA</div>
+                                    </div>
+                                </div>
+                                <div class="text-end">
+                                    <div class="small text-primary-blue">worldyachtrefit/tim3225</div>
+                                    <div class="d-flex align-items-center gap-2 text-muted">
+                                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                            <circle cx="12" cy="12" r="10"></circle>
+                                            <path d="M12 6v6l4 2"></path>
+                                        </svg>
+                                        44.520€
+                                        <span class="badge bg-light text-muted">13</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Repeat 5 more times for other items -->
                             <div class="referral-item d-flex align-items-center justify-content-between">
                                 <div class="d-flex align-items-center gap-3">
                                     <img src="https://via.placeholder.com/32" class="avatar" alt="Tim Burton">
@@ -533,13 +732,42 @@
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
     <script>
+         // Initialize the donut chart
+         const ctx = document.getElementById('performanceChart').getContext('2d');
+        new Chart(ctx, {
+            type: 'doughnut',
+            data: {
+                datasets: [{
+                    data: [45, 25, 30],
+                    backgroundColor: [
+                        '#10b981',
+                        '#5e8bf7',
+                        '#ff0053'
+                    ],
+                    borderWidth: 0,
+                    cutout: '80%'
+                }]
+            },
+            options: {
+                responsive: true,
+                maintainAspectRatio: false,
+                plugins: {
+                    legend: {
+                        display: false
+                    },
+                    tooltip: {
+                        enabled: false
+                    }
+                }
+            }
+        });
         // Sales Chart
         new Chart(document.getElementById('salesChart'), {
             type: 'bar',
             data: {
                 labels: ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'],
                 datasets: [{
-                    data: [20, 25, 18, 25, 22, 28, 60, 8, 0, 0, 0, 0],
+                    data: [20, 25, 18, 25, 22, 28, 8, 30, 0, 0, 0,],
                     backgroundColor: '#0d6efd',
                     borderRadius: 4
                 }]
