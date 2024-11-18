@@ -7,6 +7,8 @@
     <meta name="description" content="" />
     <!-- Favicon -->
     <link rel="icon" type="image/x-icon" href="assets/assets/img/favicon/favicon.ico" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.5.0/font/bootstrap-icons.min.css">
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -221,8 +223,7 @@
         <!-- / Menu -->
         <!-- Layout container -->
         <div class="layout-page">
-          <!-- Navbar --> <?php include 'layout/header.php';?>
-          <div class="report-form" id="reportForm">
+          <!-- Navbar --> <?php include 'layout/header-5.php';?> <div class="report-form" id="reportForm">
             <a href="#" class="back-link" onclick="hideForm()">&larr; Submit report</a>
             <h6 class="mt-3">Select a job to report</h6>
             <div class="form-group mb-3">
@@ -307,49 +308,7 @@
                   </div>
                 </div>
               </div>
-              <div class="col-lg-12 mt-5">
-                <div class="row">
-                  <div class="col-lg-4">
-                    <div class="card" style="border: 1px solid #C6D2E7;height: 90px;box-shadow: none !important ;background: url('assets/img/card-corner.png');background-size: 100% 100% ;padding: 20px;border-radius: 0px;color: #00365E;">
-                      <div class="d-flex align-items-center">
-                        <div class="badge rounded-pill bg-label-primary me-3 p-2" style="background-color:#F2F6FA !important">
-                          <i class="ti ti-file-analytics ti-md" style="color:#00365E"></i>
-                        </div>
-                        <div class="card-info">
-                          <small style="font-size: 11px">Total reports</small>
-                          <h5 class="mb-0" style="color: #00365E">05</h5>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col-lg-4">
-                    <div class="card" style="border: 1px solid #FF005C;height: 90px;box-shadow: none !important;background: url('assets/img/card-corner-red.png');background-size: 100% 100% ;padding: 20px;border-radius: 0px;color: #00365E;">
-                      <div class="d-flex align-items-center">
-                        <div class="badge rounded-pill bg-label-primary me-3 p-2" style="background-color:#FF005C0D !important">
-                          <img src="assets/img/Icon.png">
-                        </div>
-                        <div class="card-info">
-                          <small style="font-size: 11px">Current Incidents</small>
-                          <h5 class="mb-0" style="color: #FF005C">05</h5>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col-lg-4">
-                    <div class="card" style="border: 1px solid #2AD7B3;height: 90px;box-shadow: none !important;background: url('assets/img/card-corner-green.png');background-size: 100% 100% ;padding: 20px;border-radius: 0px;color: #00365E;">
-                      <div class="d-flex align-items-center">
-                        <div class="badge rounded-pill bg-label-primary me-3 p-2" style="background-color:#2AD7B30D !important">
-                          <i class="ti ti-circle-check" style="color: #2AD7B3"></i>
-                        </div>
-                        <div class="card-info">
-                          <small style="font-size: 11px">Progress reports</small>
-                          <h5 class="mb-0" style="color: #2AD7B3">04</h5>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
+              <!-- <div class="col-lg-12 mt-5"><div class="row"><div class="col-lg-4"><div class="card" style="border: 1px solid #C6D2E7;height: 90px;box-shadow: none !important ;background: url('assets/img/card-corner.png');background-size: 100% 100% ;padding: 20px;border-radius: 0px;color: #00365E;"><div class="d-flex align-items-center"><div class="badge rounded-pill bg-label-primary me-3 p-2" style="background-color:#F2F6FA !important"><i class="ti ti-file-analytics ti-md" style="color:#00365E"></i></div><div class="card-info"><small style="font-size: 11px">Total reports</small><h5 class="mb-0" style="color: #00365E">05</h5></div></div></div></div><div class="col-lg-4"><div class="card" style="border: 1px solid #FF005C;height: 90px;box-shadow: none !important;background: url('assets/img/card-corner-red.png');background-size: 100% 100% ;padding: 20px;border-radius: 0px;color: #00365E;"><div class="d-flex align-items-center"><div class="badge rounded-pill bg-label-primary me-3 p-2" style="background-color:#FF005C0D !important"><img src="assets/img/Icon.png"></div><div class="card-info"><small style="font-size: 11px">Current Incidents</small><h5 class="mb-0" style="color: #FF005C">05</h5></div></div></div></div><div class="col-lg-4"><div class="card" style="border: 1px solid #2AD7B3;height: 90px;box-shadow: none !important;background: url('assets/img/card-corner-green.png');background-size: 100% 100% ;padding: 20px;border-radius: 0px;color: #00365E;"><div class="d-flex align-items-center"><div class="badge rounded-pill bg-label-primary me-3 p-2" style="background-color:#2AD7B30D !important"><i class="ti ti-circle-check" style="color: #2AD7B3"></i></div><div class="card-info"><small style="font-size: 11px">Progress reports</small><h5 class="mb-0" style="color: #2AD7B3">04</h5></div></div></div></div></div></div> -->
               <div class="col-lg-12 mt-5">
                 <div class="row">
                   <!-- Left side area col-lg-12 -->
@@ -372,10 +331,51 @@
                           </div>
                           <div class="col-lg-7">
                             <div class="d-flex flex-wrap">
-                              <button type="button" class="btn dropdown-toggle waves-effect waves-light" data-bs-toggle="dropdown" aria-expanded="false" style="color: #00365E;"> Report Type </button>
-                              <button type="button" class="btn dropdown-toggle waves-effect waves-light" data-bs-toggle="dropdown" aria-expanded="false" style="color: #00365E;"> Yacht </button>
-                              <button type="button" class="btn dropdown-toggle waves-effect waves-light" data-bs-toggle="dropdown" aria-expanded="false" style="color: #00365E;"> All Jobs </button>
-                              <button type="button" class="btn dropdown-toggle waves-effect waves-light" data-bs-toggle="dropdown" aria-expanded="false" style="color: #00365E;"> This Week </button>
+                              <!-- Yacht Button -->
+                              <div class="dropdown">
+                                <button type="button" class="btn dropdown-toggle waves-effect waves-light" data-bs-toggle="dropdown" aria-expanded="false" style="color: #00365E;"> Yacht </button>
+                                <ul class="dropdown-menu">
+                                  <li>
+                                    <a class="dropdown-item" href="#">Yacht 1</a>
+                                  </li>
+                                  <li>
+                                    <a class="dropdown-item" href="#">Yacht 2</a>
+                                  </li>
+                                  <li>
+                                    <a class="dropdown-item" href="#">Yacht 3</a>
+                                  </li>
+                                </ul>
+                              </div>
+                              <!-- All Jobs Button -->
+                              <div class="dropdown">
+                                <button type="button" class="btn dropdown-toggle waves-effect waves-light" data-bs-toggle="dropdown" aria-expanded="false" style="color: #00365E;"> All Jobs </button>
+                                <ul class="dropdown-menu">
+                                  <li>
+                                    <a class="dropdown-item" href="#">Job 1</a>
+                                  </li>
+                                  <li>
+                                    <a class="dropdown-item" href="#">Job 2</a>
+                                  </li>
+                                  <li>
+                                    <a class="dropdown-item" href="#">Job 3</a>
+                                  </li>
+                                </ul>
+                              </div>
+                              <!-- This Week Button -->
+                              <div class="dropdown">
+                                <button type="button" class="btn dropdown-toggle waves-effect waves-light" data-bs-toggle="dropdown" aria-expanded="false" style="color: #00365E;"> This Week </button>
+                                <ul class="dropdown-menu">
+                                  <li>
+                                    <a class="dropdown-item" href="#">Monday</a>
+                                  </li>
+                                  <li>
+                                    <a class="dropdown-item" href="#">Tuesday</a>
+                                  </li>
+                                  <li>
+                                    <a class="dropdown-item" href="#">Wednesday</a>
+                                  </li>
+                                </ul>
+                              </div>
                             </div>
                           </div>
                         </div>
@@ -533,6 +533,26 @@
       <div class="drag-target"></div>
     </div>
     <!-- / Layout wrapper -->
+    <script>
+      document.addEventListener('DOMContentLoaded', function() {
+        const closeButtons = document.querySelectorAll('.btn-close');
+        closeButtons.forEach(function(button) {
+          button.addEventListener('click', function() {
+            this.parentElement.remove();
+          });
+        });
+      });
+
+      function showForm() {
+        document.getElementById("reportForm").classList.add("show");
+      }
+
+      function hideForm() {
+        document.getElementById("reportForm").classList.remove("show");
+      }
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
     <!-- Core JS -->
     <!-- build:js assets/vendor/js/core.js -->
     <script src="assets/assets/vendor/libs/jquery/jquery.js"></script>
