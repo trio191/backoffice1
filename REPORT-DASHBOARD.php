@@ -223,7 +223,9 @@
         <!-- / Menu -->
         <!-- Layout container -->
         <div class="layout-page">
-          <!-- Navbar --> <?php include 'layout/header-5.php';?> <div class="report-form" id="reportForm">
+          <!-- Navbar --> 
+          <?php include 'layout/header-5.php';?>
+           <div class="report-form" id="reportForm">
             <a href="#" class="back-link" onclick="hideForm()">&larr; Submit report</a>
             <h6 class="mt-3">Select a job to report</h6>
             <div class="form-group mb-3">
