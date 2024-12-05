@@ -129,21 +129,13 @@
                       </div>
                   </div>
               </div>
-              <nav class="navbar navbar-expand-lg navbar-light">
-                  <div class="container-fluid">
-                    <ul class="navbar-nav">
-                     <li class="nav-item">
-                        <a class="nav-link" href="new-1.php">Available jobs</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="new-2.php">My Jobs</a>
-                    </li>
-                    <li class="nav-item">
-                         <a class="nav-link" href="new-3.php">Bookmarked</a>
-                    </li>
-                    </ul>
-                  </div>
-            </nav>
+              <div style="background: white; border-bottom: 1px solid #eee;">
+        <div style="max-width: 1200px; margin: 0 auto; display: flex; gap: 20px; padding: 0 20px;">
+           <a href="professional-dashboard.php" > <button  style="; border: none; padding: 15px 20px; cursor: pointer;">Available jobs</button></a>
+            <a href="JOB-COMPANY.php" ><button  style="background: #4285f4; color: white; border: none; padding: 15px 20px; cursor: pointer;">My Jobs</button></a>
+            <a href="professional-dashboard-bookmarked.php" ><button style="background: none; border: none; padding: 15px 20px; cursor: pointer;">Bookmarked</button></a>
+        </div>
+    </div>
             <div class="container-xxl flex-grow-1 container-p-y">
               <!-- Layout Demo -->
               
