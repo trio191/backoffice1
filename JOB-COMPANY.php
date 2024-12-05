@@ -116,7 +116,7 @@
                   <div class="col-lg-12 text-container" style="max-width: 1440px;padding-left: 100px;padding-right: 100px;"> <!-- Text container -->
                       <div class="row pt-2">
                           <div class="col-lg-7 text-white">
-                              <h3 class="text-white">Find the right professional</h3>
+                              <h3 class="text-white">Find your next job around the world!</h3>
                               
                           </div>
                           <div class="col-lg-5" style="text-align: right;">
