@@ -1,0 +1,633 @@
+.rules {
+  font-family: Poppins;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 22px;
+  letter-spacing: 0.5px;
+  color: #00365e;
+}
+.confermation-btn{
+  background-color: #5E8BF7;
+  font-family: Poppins;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 21px;
+  letter-spacing: 1px;
+  color: #ffff
+  ;
+  width: 224px;
+  outline: none;
+  border: 0;
+  margin: auto;
+  text-align: center;
+  height: 40px;
+  text-transform: uppercase;
+  outline: none !important;
+  
+}
+.btn-light:hover{
+  background-color: white;
+
+}
+.uperText-left{
+font-family: Poppins;
+font-size: 18px;
+font-weight: 400;
+line-height: 36px;
+letter-spacing: 6px;
+text-align: center;
+text-transform: uppercase;
+color: white !important;
+z-index: 2;
+
+}
+.lower-heading-left{
+  font-family: Cormorant Garamond;
+font-size: 66px;
+font-weight: 400;
+line-height: 56px;
+letter-spacing: 1px;
+text-align: center;
+color: white;
+z-index: 2;
+
+}
+
+@media screen and (min-width: 360px) {
+  .create-account-text-upper{
+   display: none;
+    
+    
+
+  }
+  .create-account-text-heading{
+  display: none;
+    
+
+  }
+ 
+  .heading {
+    font-family: Cormorant Garamond;
+    font-size: 36px;
+    font-weight: 400;
+    line-height: 40px;
+    letter-spacing: 1px;
+    text-align: left;
+    color: #00365e;
+  }
+  .sub-heading {
+    font-family: Poppins;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 30px;
+    letter-spacing: 0.5px;
+    text-align: left;
+
+    color: #323957;
+  }
+  .custome-input-field {
+    height: 40px;
+    width: 100%;
+    border: 1px solid #5e8bf7;
+    outline: none;
+    border-radius: 1px;
+    padding: 10px;
+    background-color: white;
+  }
+  .login-btn {
+    width: 100%;
+    height: 52px;
+    padding: 14px, 32px, 14px, 32px;
+    border: 2px;
+    /* gap: 8px; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+  outline: none !important;
+
+  }
+  .footer-text {
+    font-family: Poppins;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 21px;
+    letter-spacing: 1px;
+    text-align: center;
+    /* background: #000; */
+  }
+  .custome-input-field-icons {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border: 1px solid #c6d2e7;
+    height: 40px;
+    padding: 15px;
+    gap: 8px;
+  }
+  .custome-input-field-addowner {
+    height: 38px;
+    /* padding: 12 309 12 17; */
+    width: 100%;
+    border: 1px solid #c6d2e7;
+    outline: none;
+    border-radius: 1px;
+    padding-left: 5px;
+    background-color: white;
+  }
+  .infut-right-side {
+    width: auto;
+  }
+  .right-text {
+    font-size: 12px;
+  }
+  .innerFormBgg {
+    background-color: #f9f8f7;
+    padding: 5px !important;
+  }
+  .custome-input-field-password {
+    height: 40px;
+    width: 100%;
+    border: 1px solid #5e8bf7;
+    outline: none;
+    border-radius: 1px;
+    padding: 15px !important;
+    background-color: white;
+  }
+  .input-parent-div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+  }
+  .opt-input {
+    outline: none;
+    line-height: 40px;
+    font-size: 25px;
+    font-weight: 500;
+    font-family: Poppins;
+    width: 40px;
+    color: #00365e;
+  }
+  .right-image{
+    display: none;
+  }
+}
+
+/* Breakpoint at 768px */
+@media screen and (min-width: 768px) {
+  .heading {
+    font-family: Cormorant Garamond;
+    font-size: 36px;
+    font-weight: 400;
+    line-height: 40px;
+    letter-spacing: 1px;
+    text-align: left;
+
+    color: #00365e;
+  }
+  .sub-heading {
+    font-family: Poppins;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 30px;
+    letter-spacing: 0.5px;
+    text-align: left;
+
+    color: #323957;
+  }
+  .custome-input-field {
+    height: 40px;
+    width: 100%;
+    border: 1px solid #5e8bf7;
+    outline: none;
+    border-radius: 1px;
+    padding-left: 15px;
+    background-color: white;
+  }
+  .custome-input-field-password {
+    height: 40px;
+    width: 100%;
+    border: 1px solid #5e8bf7;
+    outline: none;
+    border-radius: 1px;
+    padding-left: 15px;
+    background-color: white;
+  }
+  .login-btn {
+    width: 100%;
+    height: 52px;
+    padding: 14px, 32px, 14px, 32px;
+    border: 2px;
+    /* gap: 8px; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+  }
+  .footer-text {
+    font-family: Poppins;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 21px;
+    letter-spacing: 1px;
+    text-align: center;
+  }
+  .custome-input-field-icons {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border: 1px solid #c6d2e7;
+    height: 40px;
+    padding: 15px;
+    gap: 8px;
+  }
+  .fb-input {
+    width: 50%;
+  }
+  .ld-input {
+    width: 50%;
+  }
+  .custome-input-field-addowner {
+    height: 38px;
+    padding: 12 309 12 17;
+    width: 100%;
+    border: 1px solid #c6d2e7;
+    outline: none;
+    border-radius: 1px;
+    padding-left: 15px;
+    background-color: white;
+  }
+  .infut-right-side {
+    width: 150px;
+  }
+  .right-text {
+    font-size: 16px;
+  }
+  .opt-input {
+    outline: none;
+    line-height: 40px;
+    font-size: 34px;
+    font-weight: 500;
+    font-family: Poppins;
+    width: 60px;
+    color: #00365e;
+  }
+  .right-image{
+    display: flex;
+  }
+}
+
+/* Breakpoint at 992px */
+@media screen and (min-width: 992px) {
+  .heading {
+    font-family: Cormorant Garamond;
+    font-size: 44px;
+    font-weight: 400;
+    line-height: 48px;
+    letter-spacing: 1px;
+    text-align: left;
+    color: #00365e;
+  }
+  .sub-heading {
+    font-family: Poppins;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 30px;
+    letter-spacing: 0.5px;
+    text-align: left;
+    color: #323957;
+  }
+  .custome-input-field {
+    height: 56px;
+    width: 100%;
+    border: 1px solid #5e8bf7;
+    outline: none;
+    border-radius: 1px;
+    padding-left: 15px;
+    background-color: white;
+  }
+  .login-btn {
+    width: 100%;
+    height: 52px;
+    padding: 14px, 32px, 14px, 32px;
+    border: 2px;
+    /* gap: 8px; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+  }
+  .footer-text {
+    font-family: Poppins;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 21px;
+    letter-spacing: 1px;
+    text-align: center;
+  }
+  .custome-input-field-icons {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border: 1px solid #c6d2e7;
+    height: 40px;
+    padding: 15px;
+    gap: 8px;
+  }
+  .custome-input-field-addowner {
+    height: 38px;
+    padding: 12 309 12 17;
+    width: 100%;
+    border: 1px solid #c6d2e7;
+    outline: none;
+    border-radius: 1px;
+    padding-left: 15px;
+    background-color: white;
+  }
+  .innerFormBgg {
+    background-color: #f9f8f7;
+    padding: 15px !important;
+  }
+  .custome-input-field-password {
+    height: 40px;
+    width: 49%;
+    border: 1px solid #5e8bf7;
+    outline: none;
+    border-radius: 1px;
+    padding: 15px !important;
+    background-color: white;
+  }
+  .input-parent-div {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 15px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .create-account-text-upper{
+    display: flex;
+    font-family: Poppins;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 36px;
+    letter-spacing: 6px;
+    text-align: center;
+    
+
+  }
+  .create-account-text-heading{
+font-family: Cormorant Garamond;
+display: flex;
+
+font-size: 52px;
+font-weight: 400;
+line-height: 56px;
+letter-spacing: 1px;
+text-align: center;
+
+  }
+  .heading {
+    font-family: Cormorant Garamond;
+    font-size: 44px;
+    font-weight: 400;
+    line-height: 48px;
+    letter-spacing: 1px;
+    text-align: left;
+    color: #00365e;
+  }
+  .sub-heading {
+    font-family: Poppins;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 30px;
+    letter-spacing: 0.5px;
+    text-align: left;
+    color: #323957;
+  }
+  .custome-input-field {
+    height: 40px;
+    width: 100%;
+    border: 1px solid #5e8bf7;
+    outline: none;
+    border-radius: 1px;
+    padding-left: 15px;
+    background-color: white;
+  }
+  .login-btn {
+    width: 100%;
+    height: 38px;
+    /* padding: 14px, 32px, 14px, 32px; */
+    border: 2px;
+    /* gap: 8px; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+  }
+  .left-side-sub-heading {
+    font-family: Cormorant Garamond;
+    font-size: 52px;
+    font-weight: 400;
+    line-height: 56px;
+    letter-spacing: 1px;
+    text-align: center;
+    z-index: 2;
+  }
+  .footer-text {
+    font-family: Poppins;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 21px;
+    letter-spacing: 1px;
+    text-align: center;
+  }
+  .custome-input-field-addowner {
+    height: 38px;
+    padding: 12 309 12 17;
+    width: 100%;
+
+    background-color: aqua;
+    border: 1px solid #c6d2e7;
+    outline: none;
+    border-radius: 1px;
+    padding-left: 15px;
+    background-color: white;
+  }
+}
+
+/* Breakpoint at 1400px */
+@media screen and (min-width: 1400px) {
+  .create-account-text-upper{
+    font-family: Poppins;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 36px;
+    letter-spacing: 6px;
+    text-align: center;
+    
+    
+
+  }
+  .create-account-text-heading{
+    font-family: Cormorant Garamond;
+    font-size: 66px;
+    font-weight: 400;
+    line-height: 56px;
+    letter-spacing: 1px;
+    text-align: center;
+    
+
+  }
+  .heading {
+    font-family: Cormorant Garamond;
+    font-size: 48px;
+    font-weight: 400;
+    line-height: 50px;
+    letter-spacing: 1px;
+    text-align: left;
+    color: #00365e;
+  }
+  .sub-heading {
+    font-family: Poppins;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 30px;
+    letter-spacing: 0.5px;
+    text-align: left;
+    color: #323957;
+  }
+  .custome-input-field {
+    height: 40px;
+    width: 100%;
+    border: 1px solid #5e8bf7;
+    outline: none;
+    border-radius: 1px;
+    padding-left: 15px;
+    background-color: white;
+  }
+  .login-btn {
+    width: 100%;
+    height: 52px;
+    /* padding: 14px, 32px, 14px, 32px; */
+    border: 2px;
+    /* gap: 8px; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+  }
+  .footer-text {
+    font-family: Poppins;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 21px;
+    letter-spacing: 1px;
+    text-align: center;
+  }
+  .custome-input-field-addowner {
+    height: 38px;
+    padding: 12 309 12 17;
+    border: 1px solid #c6d2e7;
+    outline: none;
+    border-radius: 1px;
+    padding-left: 15px;
+    background-color: white;
+  }
+}
+
+/* Breakpoint at 1920px */
+@media screen and (min-width: 1920px) {
+  /* Your CSS rules for screens wider than or equal to 1920px */
+  .create-account-text-upper{
+    font-family: Poppins;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 36px;
+    letter-spacing: 6px;
+    text-align: center;
+    
+    
+
+  }
+  .create-account-text-heading{
+    font-family: Cormorant Garamond;
+    font-size: 66px;
+    font-weight: 400;
+    line-height: 56px;
+    letter-spacing: 1px;
+    text-align: center;
+    
+
+  }
+  .heading {
+    font-family: Cormorant Garamond;
+    font-size: 48px;
+    font-weight: 400;
+    line-height: 50px;
+    letter-spacing: 1px;
+    text-align: left;
+    color: #00365e;
+  }
+  .sub-heading {
+    font-family: Poppins;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 30px;
+    letter-spacing: 0.5px;
+    text-align: left;
+    color: #323957;
+  }
+  .custome-input-field {
+    height: 40px;
+    width: 100%;
+    border: 1px solid #5e8bf7;
+    outline: none;
+    border-radius: 1px;
+    padding-left: 15px;
+    background-color: white;
+  }
+  .custome-input-field-addowner {
+    height: 38px;
+    padding: 12 309 12 17;
+    border: 1px solid #c6d2e7;
+    outline: none;
+    border-radius: 1px;
+    padding-left: 15px;
+    background-color: white;
+  }
+  .login-btn {
+    width: 100%;
+    height: 52px;
+    padding: 14px, 32px, 14px, 32px;
+    border: 2px;
+    /* gap: 8px; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+  }
+  .footer-text {
+    font-family: Poppins;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 21px;
+    letter-spacing: 1px;
+    text-align: center;
+  }
+}
+
+.overlayss {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #0f3a4f;
+  opacity: 0.7;
+  z-index: 0;
+}
+::placeholder {
+  color: #00365e;
+}

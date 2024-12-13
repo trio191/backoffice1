@@ -1,0 +1,428 @@
+.surveyimg {
+  width: 100%;
+}
+.overlayb-company {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #0F3A4F;
+  opacity: 0.5;
+  z-index: 0;
+}
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #0F3A4F;
+  opacity: 0.5;
+  z-index: 0;
+}
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #0F3A4F;
+  opacity: 0.5;
+  z-index: 0;
+}
+
+.hero h1 {
+  font-family: Cormorant Garamond;
+  font-size: 48px;
+  font-weight: 400;
+  line-height: 50px;
+  letter-spacing: 1px;
+  text-align: center;
+  color: #fff;
+  position: relative;
+  z-index: 1;
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+.text-of-conatiner {
+  margin-top: 50px;
+}
+.background-lines-cap img {
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 600px;
+  height: 300px;
+  background-image: url("/images/rightwaves.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  z-index: 0;
+}
+.hero-height {
+  height: 100vh;
+}
+.captain-section1 {
+  font-family: Cormorant Garamond;
+  font-size: 48px;
+  font-weight: 400;
+  line-height: 50px;
+  letter-spacing: 1px;
+  text-align: center;
+}
+
+.captain-section1 .sub-title {
+  font-size: 18px;
+  font-weight: 500;
+  color: #333;
+  font-family: Poppins;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 2px;
+  text-align: center;
+  position: relative;
+  z-index: 1;
+}
+
+.captain-section1 .big-title {
+  font-family: Cormorant Garamond;
+  font-size: 82px;
+  font-weight: 500;
+  line-height: 78px;
+  letter-spacing: 2px;
+  text-align: center;
+}
+
+.background-lines-cap img {
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 600px;
+  height: 300px;
+  background-image: url("/images/rightwaves.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  z-index: 0;
+}
+.background-lines-capSecond img {
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 100%;
+  height: 100px;
+  background-image: url("/yacht/images/Modo_de_isolamento.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  z-index: 0;
+}
+
+.container-section2 h3 {
+  font-family: Cormorant SC;
+  font-size: 38px;
+  font-weight: 400;
+  line-height: 50px;
+  letter-spacing: 1px;
+  text-align: center;
+}
+
+.background-lines-rc img {
+  position: absolute;
+  right: 0;
+  width: 800px;
+  height: 600px;
+  z-index: 1;
+}
+
+.cards-company {
+  width: 326px;
+  height: 520px;
+  top: 32px;
+  border-radius: 16px;
+  border: 1px;
+}
+.card-description-text {
+  color: white;
+  font-family: Poppins;
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 24px;
+  letter-spacing: 1px;
+  text-align: left;
+}
+.cfat-section {
+  height: 120px;
+  gap: 0px;
+}
+.cfat {
+  outline: none;
+  height: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.custom-svg path {
+  fill: gray; /* Change color here */
+}
+.tag-link {
+  color: blue; /* Blue color for links */
+  text-decoration: underline; /* Underline for links */
+  margin-right: 10px; /* Adjust spacing between links */
+}
+
+@media (min-width: 360px) {
+  
+}
+
+.video-card {
+  position: absolute;
+  top: 25%;
+  left: 68%;
+  width: 100%;
+  height: 100%;
+  border-radius: 16px;
+  border: 1px;
+  z-index: 4;
+}
+
+
+.streamline-card h2 {
+  font-family: Cormorant SC;
+  font-size: 35px;
+  font-weight: 400;
+  line-height: 50px;
+  letter-spacing: 1px;
+  text-align: center;
+}
+.cards-coll h3 {
+  color: #fff;
+}
+
+.container-section22 {
+  margin-top: 120px;
+  margin-bottom: 120px;
+}
+
+.section51 {
+  margin: 50px 0px;
+  padding: 20px 10px;
+  padding: 96px, 270px, 96px, 270px;
+  gap: 56px;
+  background-image: url("../images/bgyacht.jpg") !important;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+.background-lines-comp {
+  position: absolute;
+  top: 0px;
+  left: 0;
+  width: 100%;
+  height: 70px; /* Adjust this value to your preference */
+  background-image: url("/images/waves-comp.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  z-index: 4;
+}
+
+.section3-comp {
+  /* padding: 55px 60px; */
+}
+.section3-comp h3 {
+  font-family: "popins", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 2px;
+  text-align: left;
+  color: #00365e;
+}
+
+.section3-comp h2 {
+  font-family: "Cormorant SC", serif;
+  font-style: normal;
+  font-size: 48px;
+  font-weight: 400;
+  line-height: 50px;
+  letter-spacing: 1px;
+  text-align: left;
+  color: #00365e;
+}
+
+.section3-comp p {
+  font-family: "popins", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 30px;
+  letter-spacing: 0.5px;
+  text-align: left;
+  color: #00365e;
+}
+
+.leftText h2 {
+  font-family: "garamond", serif;
+  font-size: 48px;
+  font-weight: 400;
+  line-height: 50px;
+  letter-spacing: 1px;
+  text-align: left;
+  color: #00365e;
+  position: relative;
+  z-index: 4;
+}
+
+.leftText p {
+  font-family: "Poppins", sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 2px;
+  text-align: left;
+  color: #00365e;
+}
+
+.bestjobsSection {
+  padding: 70px 0px;
+}
+
+.bestjobsSection h2 {
+  font-family: "Cormorant SC", serif;
+  font-size: 48px;
+  font-weight: 400;
+  line-height: 50px;
+  letter-spacing: 1px;
+  text-align: center;
+  color: #00365e;
+}
+
+.bestjobsSection p {
+  font-family: "Poppins", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 2px;
+  text-align: left;
+  color: #00365e;
+}
+
+.UnlockSection {
+  /* padding: 70px 0px; */
+}
+.UnlockSection h2 {
+  font-family: "Cormorant SC", serif;
+  font-size: 48px;
+  font-weight: 400;
+  line-height: 50px;
+  letter-spacing: 1px;
+  text-align: left;
+  color: #00365e;
+}
+
+.UnlockSection p {
+  font-family: "Poppins", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 2px;
+  text-align: left;
+  color: #00365e;
+}
+
+.cards-section1 h3 {
+  font-family: "Cormorant SC", serif;
+  font-size: 48px;
+  font-weight: 400;
+  line-height: 50px;
+  letter-spacing: 1px;
+  text-align: center;
+  color: #fff;
+}
+
+.big-title-Section h2 {
+  font-family: "Cormorant SC", serif;
+  font-size: 48px;
+  font-weight: 400;
+  line-height: 50px;
+  letter-spacing: 1px;
+  text-align: center;
+  color: #00365e;
+}
+
+.big-title-Section p {
+  font-family: "Poppins", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 2px;
+  text-align: center;
+  color: #fff;
+}
+
+.cards-section1 h3 {
+  font-family: "Cormorant SC", serif;
+  font-size: 48px;
+  font-weight: 400;
+  line-height: 50px;
+  letter-spacing: 1px;
+  text-align: center;
+  color: #fff;
+}
+
+.section2 .bg-card h3 {
+  color: #fff;
+}
+
+@media (max-width: 768px) {
+  .container-section2 h3 {
+    font-family: Cormorant SC;
+    font-size: 22px;
+    font-weight: 400;
+    line-height: 30px;
+    letter-spacing: 1px;
+    text-align: center;
+  }
+  .background-lines-rc img {
+    position: absolute;
+    top: 60%;
+    right: 0%;
+    width: 300px;
+    height: 300px;
+    background-image: url("/images/Waves.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    color: red;
+    z-index: 1;
+  }
+  .video-card {
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    align-items: center;
+    border-radius: 16px;
+    border: 1px;
+    z-index: 4;
+    margin: auto;
+  }
+
+  .cards-company {
+    width: 266px;
+    height: auto;
+    top: 32px;
+    border-radius: 16px;
+    border: 1px;
+  }
+  .background-lines-comp img {
+    position: absolute;
+    top: 0px;
+    left: 0;
+    width: 100vw;
+    height: 70px; /* Adjust this value to your preference */
+    background-image: url("/images/waves-comp.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    z-index: 4;
+  }
+}

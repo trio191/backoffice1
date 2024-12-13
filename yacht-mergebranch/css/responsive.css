@@ -1,0 +1,31 @@
+/* Medium devices (between 577px and 768px) */
+@media (min-width: 577px) and (max-width: 768px) {
+  /* Empty */
+}
+
+/* Large devices (between 769px and 992px) */
+@media (min-width: 769px) and (max-width: 992px) {
+  /* Empty */
+}
+
+/* Extra large devices (between 993px and 1200px) */
+@media (min-width: 993px) and (max-width: 1200px) {
+  /* Empty */
+}
+
+/* Extra extra large devices (above 1200px) */
+@media (min-width: 1201px) {
+  /* Empty */
+}
+.btn-txt {
+  font-family: Poppins;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 21px;
+  letter-spacing: 1px;
+  text-align: left;
+}
+.btn-txt:hover {
+  background: white;
+  color: black;
+}

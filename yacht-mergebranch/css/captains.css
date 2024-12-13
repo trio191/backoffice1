@@ -1,0 +1,273 @@
+.background-lines-cap img {
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 700px;
+  height: 300px;
+  background-image: url("/images/rightwaves.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  z-index: 0;
+}
+.big-feature {
+  font-family: Poppins;
+  font-size: 16px;
+  text-transform: uppercase;
+  color: #00365e;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 2px;
+  text-align: center;
+}
+
+.captain-section1 .big-title {
+  font-family: Cormorant Garamond;
+  font-size: 48px;
+  font-weight: 400;
+  line-height: 50px;
+  letter-spacing: 1px;
+  text-align: center;
+}
+
+.captain-section1 .sub-title {
+  font-family: Poppins;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 2px;
+  text-align: center;
+}
+.section5 {
+  /* padding: 90px 2px 90px 2px; */
+}
+.section5 .container {
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+.section6 .title {
+  font-family: Cormorant Garamond;
+  font-size: 32px;
+  font-weight: 400;
+  line-height: 40px;
+  letter-spacing: 1px;
+  text-align: left;
+}
+
+.section5 .description {
+  font-family: Poppins;
+  font-size: 13px;
+  font-weight: 500;
+  line-height: 22px;
+  letter-spacing: 1px;
+  text-align: left;
+}
+
+
+.container-section2 a:first-child {
+  margin-right: -1px !important;
+}
+.container-section2 a:last-child {
+  margin-left: -1px !important;
+}
+.container-section2 a {
+  border-radius: 0px !important;
+}
+
+.big-section-captain{
+  padding-top: 16px;
+  padding-bottom: 16px;
+
+}
+.cards-section-captain{
+  
+}
+.captain-overlay{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #0F3A4F;
+  opacity: 0.3;
+  z-index: 0;
+
+}
+
+@media (min-width: 360px) {
+  .big-section-captain{
+    padding-top: 16px !important;
+    padding-bottom: 16px !important;
+  
+  }
+ 
+}
+@media (min-width: 767px) {
+  .big-section-captain{
+    padding-top: 22px !important;
+    padding-bottom: 22px !important;
+  
+  }
+ 
+}
+
+
+
+@media (max-width: 360px) {
+  
+  .section5 .section-title {
+    font-family: Cormorant SC;
+    font-size: 20px;
+    font-weight: 300;
+    line-height: 30px;
+    letter-spacing: 1px;
+    text-align: center;
+  }
+  .section5 .start-today{
+    font-family: Poppins;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 16px;
+    letter-spacing: 2px;
+    text-align: center;
+    text-transform: uppercase;
+    color: white;
+    
+  }
+   .captain-card{
+    width: 313px;
+  height: 262px;
+  padding: 32px ;  
+  border: 2px solid #FFFFFF ;
+  
+  
+  }
+  
+
+}
+@media (max-width: 767px) {
+  .captain-card{
+    width: 313px;
+  height: 262px;
+  padding: 32px ;  
+  border: 2px solid #FFFFFF ;
+  
+  
+  }
+  .background-lines-cap{
+    display: none;
+  }
+  .background-lines-cap img {
+    width: 50%;
+    height: auto;
+  }
+  .container-section2 a {
+    margin-bottom: 10px;
+  }
+
+  .big-feature {
+    font-family: Poppins;
+    font-size: 16px;
+    text-transform: uppercase;
+    color: #00365e;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 2px;
+    text-align: center;
+  }
+
+  .captain-section1 .big-title {
+    font-family: Cormorant Garamond;
+    font-size: 32px;
+    font-weight: 400;
+    line-height: 40px;
+    letter-spacing: 1px;
+    text-align: left;
+    text-align: center;
+  }
+
+  .captain-section1 .sub-title {
+    font-family: Poppins;
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 2px;
+    text-align: center;
+  }
+  .section5 {
+    padding: 90px 2px 90px 2px;
+  }
+  .section5 .container {
+    margin-top: 50px;
+    margin-bottom: 50px;
+  }
+  .section6 .title {
+    font-family: Cormorant Garamond;
+    font-size: 28px;
+    font-weight: 400;
+    line-height: 40px;
+    letter-spacing: 1px;
+    text-align: left;
+  }
+
+  .section5 .description {
+    font-family: Poppins;
+    font-size: 13px;
+    font-weight: 500;
+    line-height: 22px;
+    letter-spacing: 1px;
+    text-align: left;
+  }
+  .section5 .section-title {
+    font-family: Cormorant SC;
+    font-size: 20px;
+    font-weight: 300;
+    line-height: 30px;
+    letter-spacing: 1px;
+    text-align: center;
+  }
+  .section5 .start-today{
+    font-family: Poppins;
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 2px;
+    text-align: center;
+    text-transform: uppercase;
+    color: white;
+    
+  }
+ 
+}
+.section5 .start-today{
+  font-family: Poppins;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 2px;
+  text-align: center;
+  text-transform: uppercase;
+  color: white;
+  
+}
+@media (min-width: 767px) {
+  .captain-card{
+    width: 417px;
+  height: 278px;
+  padding: 32px ;  
+  border: 2px solid #FFFFFF ;
+  
+  
+  }
+
+}
+@media (min-width: 992px) {
+  .captain-card{
+    width: 417px;
+  height: 290px;
+  padding: 32px ;  
+  border: 2px solid #FFFFFF ;
+  
+  
+  }
+
+}

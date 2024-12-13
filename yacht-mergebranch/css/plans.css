@@ -1,0 +1,668 @@
+/* .description {
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: justify;
+  padding: 0 0 30px;
+}
+
+.description p {
+  color: #656565;
+  line-height: 1.4;
+  font-size: 20px;
+} */
+/* 
+#main-heading h1 {
+  font-family: "Raleway", sans-serif;
+  font-size: 50px;
+  letter-spacing: 3px;
+  color: #181873;
+  padding: 15px;
+} */
+
+.ct-row {
+  text-align: center;
+  padding-bottom: 2em;
+}
+
+.col-m3 {
+  width: 28%;
+  display: inline-block;
+  padding: 25px;
+}
+
+.price-table .pt-header {
+  text-align: center;
+  position: relative;
+}
+
+.price-table .pt-header .best-ribbon {
+  width: 130px;
+  height: 130px;
+  position: absolute;
+  overflow: hidden;
+  top: -10px;
+  left: -10px;
+}
+
+.price-table .pt-header .best-ribbon span {
+  position: absolute;
+  left: -47px;
+  top: 21px;
+  width: 206px;
+  font-size: 20px;
+  letter-spacing: 1.5px;
+  background: #3f51b5;
+  color: #fff;
+  font-family: "Lato", sans-serif;
+  padding: 10px 0;
+  transform: rotate(-45deg);
+}
+
+.price-table .pt-header .best-ribbon span::before,
+.price-table .pt-header .best-ribbon span::after {
+  border-top-color: transparent;
+  border-left-color: transparent;
+}
+
+.price-table .pt-header .best-ribbon::after,
+.price-table .pt-header .best-ribbon::before {
+  z-index: -1;
+  content: "";
+  display: block;
+  border: 5px solid #8d9cf3;
+  position: absolute;
+}
+
+.price-table .pt-header .best-ribbon::before {
+  top: 0;
+  right: 0;
+}
+
+.price-table .pt-header .best-ribbon::after {
+  bottom: 0;
+  left: 0;
+}
+
+.price-table.tbl-wet .pt-header .pt-heading {
+  /* background-image: linear-gradient(to bottom right, #2ecc71, #39e682); */
+  color: #000000;
+}
+
+.price-table.tbl-sky .pt-header .pt-heading {
+  background-image: linear-gradient(to bottom right, #009688, #00bdab);
+  color: #fff;
+}
+
+.price-table.tbl-lips .pt-header .pt-heading {
+  background-image: linear-gradient(to bottom right, #e91e63, #f76093);
+  color: #fff;
+}
+
+.price-table .pt-header .pt-heading {
+  font-size: 28px;
+  display: block;
+  padding: 30px;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  font-family: "Raleway", sans-serif;
+}
+.price-table .pt-header .pt-headingSecond {
+  font-size: 28px;
+  display: block;
+  padding: 13px;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  font-family: "Raleway", sans-serif;
+}
+
+.price-table .pt-header .priceValue {
+  font-size: 40px;
+  display: block;
+  padding: 15px;
+  /* background-color: #eee; */
+  color: #656565;
+  font-family: "Lato", sans-serif;
+}
+.price-table .pt-header .priceValueSecond {
+  font-size: 40px;
+  display: block;
+  padding: 15px;
+  /* background-color: #eee; */
+  color: #656565;
+  font-family: "Lato", sans-serif;
+}
+.price-table .pt-header .priceValue div {
+  font-size: 18px;
+  display: block;
+  padding: 15px;
+  /* background-color: #eee; */
+  color: #656565;
+  font-family: "Lato", sans-serif;
+}
+
+.price-table .pt-header .priceValue .get-started-btn {
+  background-color: #3f51b5;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  font-size: 20px;
+  text-transform: uppercase;
+  font-family: "Lato", sans-serif;
+  cursor: pointer;
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  width: 100%;
+}
+.get-started-btn {
+  background-color: #5e8bf7;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  font-size: 20px;
+  text-transform: uppercase;
+  font-family: "Lato", sans-serif;
+  cursor: pointer;
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  width: 100%;
+}
+.price-table .pt-header .priceValue small {
+  font-size: 18px;
+}
+
+.price-table .pt-body {
+  background-color: #fdfdfd;
+}
+
+.price-table .pt-body .spec {
+  position: relative;
+  font-size: 19px;
+
+  -webkit-transition: all 0.5s ease-in;
+  -moz-transition: all 0.5s ease-in;
+  -o-transition: all 0.5s ease-in;
+  transition: all 0.5s ease-in;
+}
+
+.price-table .pt-body ul {
+  padding: 0;
+  margin: 0;
+  /* border: 1px solid #eee; */
+  background-color: white;
+  border-top: none;
+  position: relative;
+}
+
+.price-table .pt-body ul li {
+  padding: 17px 0;
+  list-style-type: none;
+  color: #5f5f5f;
+  position: relative;
+}
+.overlays {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #0f3a4f;
+  opacity: 0.7;
+  z-index: 0;
+}
+
+/* .price-table .pt-body ul li:not(:last-child)::before {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 100%;
+  top: 0;
+  left: 0;
+
+  -webkit-transition: all 0.4s ease-in-out;
+  -moz-transition: all 0.4s ease-in-out;
+  -o-transition: all 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out;
+} */
+
+.price-table .pt-body ul li:hover .spec,
+.price-table .pt-body ul li:hover .spec span {
+  color: #fff;
+}
+
+.price-table .pt-body ul li:last-child {
+  border: none;
+  padding: 0;
+}
+
+.price-table .pt-body ul li:nth-last-child(2) {
+  border-bottom: none;
+}
+
+.price-table .pt-body ul li span {
+  color: #000000;
+  font-size: 14px;
+  font-weight: 400;
+
+  -webkit-transition: all 0.5s ease-in-out;
+  -moz-transition: all 0.5s ease-in-out;
+  -o-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+}
+
+.price-table .pt-body ul li button {
+  width: 100%;
+  font-size: 22px;
+  text-transform: uppercase;
+  padding: 12px 0;
+  background-color: transparent;
+  cursor: pointer;
+  font-family: "Lato", sans-serif;
+
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+/* .price-table .pt-body ul li .btn-wet {
+  color: #2fcf73;
+  border: 1px solid #2fcf73;
+} */
+
+/* .price-table .pt-body ul li .btn-wet:hover {
+  color: #fff;
+  background-color: #2fcf73;
+  border: 1px solid #2fcf73;
+} */
+/* 
+.price-table .pt-body ul li .btn-sky {
+  color: #00b3a2;
+  border: 1px solid #00b3a2;
+}
+
+.price-table .pt-body ul li .btn-sky:hover {
+  color: #fff;
+  background-color: #00b3a2;
+  border: 1px solid #00b3a2;
+} */
+
+.price-table .pt-body ul li .btn-lips {
+  color: #f34b84;
+  border: 1px solid #f34b84;
+}
+
+.price-table .pt-body ul li .btn-lips:hover {
+  color: #fff;
+  background-color: #f34b84;
+  border: 1px solid #f34b84;
+}
+
+.price-table.tbl-wet .pt-body ul li:not(:last-child)::before {
+  background: #36df7d;
+}
+
+.price-table.tbl-sky .pt-body ul li:not(:last-child)::before {
+  background: #00b7a6;
+}
+
+.price-table.tbl-lips .pt-body ul li:not(:last-child)::before {
+  background: #f65b90;
+}
+
+.price-table .pt-body ul li:hover::before {
+  width: 100%;
+}
+
+.price-table.tbl-wet .spec {
+  -webkit-animation-name: fadeInRight;
+  -moz-animation-name: fadeInRight;
+  -o-animation-name: fadeInRight;
+  animation-name: fadeInRight;
+
+  -webkit-animation-duration: 1s;
+  -moz-animation-duration: 1s;
+  -o-animation-duration: 1s;
+  animation-duration: 1s;
+}
+
+.price-table.tbl-sky .spec {
+  -webkit-animation-name: zoomIn;
+  -moz-animation-name: zoomIn;
+  -o-animation-name: zoomIn;
+  animation-name: zoomIn;
+
+  -webkit-animation-duration: 1s;
+  -moz-animation-duration: 1s;
+  -o-animation-duration: 1s;
+  animation-duration: 1s;
+}
+
+.price-table.tbl-lips .spec {
+  -webkit-animation-name: fadeInLeft;
+  -moz-animation-name: fadeInLeft;
+  -o-animation-name: fadeInLeft;
+  animation-name: fadeInLeft;
+
+  -webkit-animation-duration: 1s;
+  -moz-animation-duration: 1s;
+  -o-animation-duration: 1s;
+  animation-duration: 1s;
+}
+
+/* Media Queries */
+
+/* Mini Screen */
+@media only screen and (max-width: 980px) {
+  .col-m3 {
+    width: 42%;
+  }
+}
+
+/* iPads and Tablets (portrait and landscape) */
+@media only screen and (max-device-width: 768px) {
+  .col-m3 {
+    width: 40%;
+  }
+}
+
+/* Smartphones (portrait and landscape) */
+@media only screen and (max-device-width: 480px) {
+  .col-m3 {
+    width: 70%;
+  }
+}
+
+/* Smartphones (portrait) ----------- */
+@media only screen and (max-width: 320px) {
+  .col-m3 {
+    width: 85%;
+  }
+}
+
+/* Animations */
+@-webkit-keyframes zoomIn {
+  0% {
+    transform: scale(0);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+@-moz-keyframes zoomIn {
+  0% {
+    transform: scale(0);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+@-o-keyframes zoomIn {
+  0% {
+    transform: scale(0);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+@keyframes zoomIn {
+  0% {
+    transform: scale(0);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+@-webkit-keyframes fadeInLeft {
+  0% {
+    opacity: 0;
+    transform: translateX(-50px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+@-moz-keyframes fadeInLeft {
+  0% {
+    opacity: 0;
+    transform: translateX(-50px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+@-o-keyframes fadeInLeft {
+  0% {
+    opacity: 0;
+    transform: translateX(-50px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+@keyframes fadeInLeft {
+  0% {
+    opacity: 0;
+    transform: translateX(-50px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@-webkit-keyframes fadeInRight {
+  0% {
+    opacity: 0;
+    transform: translateX(50px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+@-moz-keyframes fadeInRight {
+  0% {
+    opacity: 0;
+    transform: translateX(50px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+@-o-keyframes fadeInRight {
+  0% {
+    opacity: 0;
+    transform: translateX(50px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+@keyframes fadeInRight {
+  0% {
+    opacity: 0;
+    transform: translateX(50px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+.freeplane {
+  height: 53px;
+  width: 164px;
+  outline: none;
+  background-color: #5e8bf7;
+  color: white;
+  border: none;
+}
+.sectionButtons {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.buttonToptext {
+  /* border: 2px solid black; */
+  font-size: 18px;
+  width: 164px;
+  text-align: center;
+  font-weight: 400;
+  color: black;
+}
+.Frequentlyasked {
+  color: #00365e;
+  text-align: center;
+  font-size: 48px;
+  font-weight: 400;
+}
+.button-header-text {
+  font-size: 16px;
+  font-weight: 400;
+  letter-spacing: 2px;
+  color: #00365e;
+  text-transform: uppercase;
+  font-family: Poppins;
+}
+.perk-as-buttons {
+  display: flex;
+  margin: auto;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  z-index: 1;
+}
+.Owners-buttons {
+  width: 291px;
+  color: white;
+  outline: none !important;
+  color: #00365e;
+  background-color: white;
+  border: none;
+  height: 53px;
+  font-size: 14px;
+  border: 1px solid #c6d2e7;
+  border-right: 0;
+  font-weight: 500;
+  letter-spacing: 1px;
+}
+.Owners-buttons:hover {
+  background-color: #5e8bf7;
+  color: white;
+}
+.companies-buttons {
+  width: 314px;
+  color: #00365e;
+
+  background-color: white;
+  outline: none !important;
+  border: none;
+  height: 53px;
+  border: 1px solid #c6d2e7;
+  font-size: 14px;
+  font-weight: 500;
+
+  letter-spacing: 1px;
+}
+.companies-buttons:hover {
+  background-color: #5e8bf7;
+  color: white;
+}
+.surveyor-buttons {
+  width: 207px;
+  color: #00365e;
+
+  background-color: white;
+  outline: none !important;
+  border: none;
+  height: 53px;
+  border: 1px solid #c6d2e7;
+  border-left: none;
+  font-size: 14px;
+  font-weight: 500;
+  letter-spacing: 1px;
+}
+.surveyor-buttons:hover {
+  background-color: #5e8bf7;
+  color: white;
+}
+.plans-text-color {
+  color: #00365e;
+}
+.plans-card {
+  margin-top: 50px;
+  display: flex;
+  /* align-items: center; */
+  justify-content: center;
+  flex-direction: row;
+  gap: 15px;
+}
+.cards-section {
+  display: flex;
+}
+.featured-image {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+@media (max-width: 1400px) {
+  .cards-section {
+    display: none;
+  }
+}
+@media (max-width: 768px) {
+  .plans-card {
+    flex-direction: column;
+    padding: 30px;
+    gap: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+  }
+  .perk-as-buttons {
+    display: none;
+  }
+  .featured-image {
+    flex-direction: column;
+    gap: 20px;
+  }
+}
+@media (min-width: 768px) {
+  .small-screen-button {
+    display: none;
+  }
+}
+
+@media (max-width: 1200px) {
+  .plans-table {
+    display: none;
+  }
+  .get-unlock {
+    display: none;
+  }
+}
+.hero-height {
+  height: 75vh;
+}
+
+.featured {
+  font-family: "Cormorant SC";
+  font-size: 48px;
+  font-weight: 400;
+  line-height: 50px;
+  letter-spacing: 1px;
+  text-align: center;
+}
+
+

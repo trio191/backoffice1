@@ -1,0 +1,21 @@
+{
+  "detectedConfig": {
+    "typescript": false,
+    "naming": "Kebab Case",
+    "unit": "rem",
+    "framework": "html-css",
+    "styling": "CSS"
+  },
+  "locofyConfig": {
+    "project": "first project",
+    "id": "65e7fb0d352e04a671a9c8f5",
+    "framework": "html-css",
+    "typescript": false,
+    "styling": "CSS",
+    "unit": "px",
+    "naming": "Kebab Case",
+    "path": "public/",
+    "componentsPath": "c:\\Users\\T480\\Downloads\\website-menu-03\\website\\src\\components",
+    "screensPath": "c:\\Users\\T480\\Downloads\\website-menu-03\\website\\src\\pages"
+  }
+}

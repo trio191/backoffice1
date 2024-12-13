@@ -1,0 +1,97 @@
+.hero-hieght{
+    height: 75vh;
+}
+.background-lines-cap img {
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 500px;
+    height: 270px;
+    background-image: url("/images/rightwaves.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    z-index: 0;
+  }
+  .background-lines-cap-left{
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 400px;
+    height: 200px;
+    background-image: url("/images/rightwaves.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    z-index: 0;
+
+  }
+  .background-lines-cap-left img{
+
+    width: 500px;
+    height: 300px;
+  }
+  .sub-title{
+    color: #00365E;
+font-family: Poppins;
+font-size: 16px;
+font-weight: 400;
+line-height: 24px;
+letter-spacing: 2px;
+text-align: center;
+
+  }
+  .big-title{
+    color: #00365E;
+
+font-family: Cormorant Garamond;
+font-size: 48px;
+font-weight: 400;
+line-height: 50px;
+letter-spacing: 1px;
+text-align: center;
+
+  }
+  .contact-btn{
+    /* height: 42px; */
+    padding: 12px;
+    background-color: white;
+    border: 1px solid #C6D2E7;
+    /* padding: 15px; */
+    color: #00365E;
+    width: 200px;
+    outline: none !important;
+  }
+  .contact-btn:not(:nth-child(1)) {
+    border-right: none;
+  }
+  .contact-btn:hover{
+    background-color: #5E8BF7;
+    color: white;
+  }
+  
+  @media (max-width: 1200px) {
+    .background-lines-cap-left img{
+
+        width: 300px;
+        height: 300px;
+      }
+      .background-lines-cap img {
+       
+        width: 300px;
+        height: 270px;
+     
+      }
+  }
+
+  @media (max-width: 767px) {
+    .background-lines-cap-left img{
+
+        width: 150px;
+        height: 300px;
+      }
+      .background-lines-cap img {
+       
+        width: 150px;
+        height: 270px;
+     
+      }
+  }

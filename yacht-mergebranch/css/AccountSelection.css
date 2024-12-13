@@ -1,0 +1,30 @@
+@media (max-width: 1200px) {
+    .left-side,
+    .right-side {
+      width: 100%;
+      height: auto;
+      background-color: blue;
+    }
+    .create-account-text {
+      display: none;
+  }
+  .overlay{
+    padding-top: 12px;
+  }
+  .row{
+    display: block;
+  }
+  .forgotPassword {
+    display: none;
+  }
+  .smallScreenForgot{
+    font-size: 22px;
+  }
+  
+  }
+  @media (min-width: 993px) {
+    .smallScreenForgot {
+      display: none;
+    }
+  }
+  

@@ -1,0 +1,60 @@
+.surveyimg {
+  width: -webkit-fill-available;
+}
+.hero-height{
+  height: 75vh;
+}
+.background-lines-caps img {
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 700px;
+  height: 300px;
+  background-image: url("/images/rightwaves.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  z-index: 0;
+}
+.background-lines-s img {
+  position: absolute;
+  right: 20px;
+  bottom: -100px;
+  width: 700px;
+  height: 600px;
+  background-image: url("/images/rightwaves.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  z-index: 0;
+}
+.background-lines-ss img {
+  position: absolute;
+  right: 20px;
+  bottom: 0px;
+  width: 500px;
+  height: 400px;
+  background-image: url("/images/leftwaves.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  z-index: 0;
+}
+.background-lines-sss img {
+  position: absolute;
+  right: 0px;
+  bottom: 0px;
+  left: 00px;
+  width: 400px;
+  height: 400px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  z-index: 0;
+}
+
+
+@media (max-width: 767px) {
+  .background-lines-s img {
+    width: 100%;
+    height: auto;
+    right: 0;
+    bottom: -50px;
+  }
+}
