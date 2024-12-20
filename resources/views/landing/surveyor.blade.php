@@ -1,0 +1,401 @@
+<!doctype html>
+<html lang="en">
+
+ 
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700" rel="stylesheet">
+
+    <link rel="stylesheet" href="{{ asset('landing/fonts/icomoon/style.css') }}">
+
+    <link rel="stylesheet" href="{{ asset('landing/css/owl.carousel.min.css') }}">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="{{ asset('landing/css/bootstrap.min.css') }}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap"
+        rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+SC:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Style -->
+    <link rel="stylesheet" href="{{ asset('landing/css/style.css') }}">
+    <link rel="stylesheet" href="{{ asset('landing/css/captains.css') }}">
+    <link rel="stylesheet" href="{{ asset('landing/css/nav.css') }}">
+    <link rel="stylesheet" href="{{ asset('landing/css/survey.css') }}">
+
+</head>
+
+
+<body>
+    <div class="site-mobile-menu">
+        <div class="site-mobile-menu-header">
+            <div class="site-mobile-menu-close mt-3">
+                <span class="icon-close2 js-menu-toggle">X</span>
+            </div>
+        </div>
+        <div class="site-mobile-menu-body"></div>
+    </div>
+
+    <header class="site-navbar" role="banner">
+        <div class="px-3">
+            <div class="row align-items-center">
+                <div class="col-10 col-xl-2">
+                    <h1 class="mb-0 site-logo"><a href="index.html" class="text-white mb-0">
+                            <img src="{{asset('landing/images/logo.png')}}" alt="logo">
+                        </a></h1>
+                </div>
+                <div class="col-12 col-md-10 d-none d-xl-block">
+                    <nav class="site-navigation position-relative text-right" role="navigation">
+
+                        <ul class="site-menu js-clone-nav mr-auto d-none d-lg-block">
+                            <li><a href="{{ route('landing.captain') }}"><span>OWNERS & CAPTAINS</span></a></li>
+                            <li><a href="{{ route('landing.comapany-profession') }}"><span>COMPANIES &
+                                        PROFESSION</span></a></li>
+                            <li><a href="{{ route('landing.surveyor') }}"><span>SURVEYORS</span></a></li>
+                            <li><a href="{{ route('landing.plans') }}"><span>PLANS</span></a></li>
+
+                            <li class="btn-group regestration-buttons" role="group" aria-label="Basic example">
+                                <button href="" type="button" class="btn  button-lg">
+                                    <a href="{{route('login')}}">LOGIN</a>
+                                </button>
+                                <button type="button" class="btn " style=" background: white; color: #111;">
+                                    <a style="text-decoration: none;  " href="{{route('registeration')}}">
+                                        GET STARTED
+                                    </a>
+                                </button>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+                <div class="d-inline-block d-xl-none ml-md-0 mr-auto py-3" style="position: relative; top: 3px;"><a
+                        href="#" class="site-menu-toggle js-menu-toggle text-white"><span class="icon-menu h3">
+                            <i class="fas fa-bars"></i>
+                        </span></a></div>
+            </div>
+        </div>
+        </div>
+    </header>
+
+    <div class="hero pt-5"
+        style="background-image: url('landing/images/surveyorr.png'); height: 80vh;">
+        <div class="overlay"></div>
+        <div class="container content">
+            <div class="row align-items-center justify-content-center ">
+                <div class="col-lg-12 intro text-center">
+                    <div class="container mx-auto px-4 py-20 text-center">
+                        <h3 class="text-uppercase subtitle-hero">For surveyors</h3>
+                        <h1 class="text-white" style="
+                        font-family: Cormorant SC;">Own a superyacht
+                            stress-free</h1>
+                        <p class="lead text-gray-300 hero-description">Discover all the benefits on a online
+                            paltform</p>
+
+                        <!-- <button class="text-white py-5 bg-transparent border-0" style="outline: none;">
+
+                            <a href="#down" class="text-white">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="currentColor"
+                                    class="bi bi-chevron-double-down" viewBox="0 0 16 16">
+                                    <path fill-rule="evenodd"
+                                        d="M1.646 6.646a.5.5 0 0 1 .708 0L8 12.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708" />
+                                    <path fill-rule="evenodd"
+                                        d="M1.646 2.646a.5.5 0 0 1 .708 0L8 8.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708" />
+                                </svg>
+                            </a>
+                        </button> -->
+
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+        </div>
+
+    </div>
+    <div class="message-section py-3 ">
+        <button onclick="handleAlert()" class="message-div">
+            <img data-toggle="popover" data-content="I am happy to help" src=" {{asset('landing/images/message.png')}}">
+        </button>
+
+    </div>
+    <!-- section1 -->
+    <div class="captain-section1 position-relative pt-5 ">
+        <div class="container ">
+            <div class="row align-items-center">
+                <div class="col-md-9  mx-auto">
+                    <h3 class="pages-sub-heading" style="color: #00365E;z-index: 99; position: relative;">OWNERS AND CAPTAINS CENTRALIZED HUB
+                    </h3>
+                    <h2 class="big-title">Our platform eliminates the need for endless phone calls, emails, and
+                        paperwork to manage your yatch’s maintenance
+                        needs.</h2>
+                </div>
+
+            </div>
+            <div class="background-lines-caps">
+                <img src="{{asset('landing/images/rightwaves.png')}} " alt="">
+            </div>
+
+        </div>
+
+    </div>
+
+    <!-- section2 -->
+    <div class="bg-gray-100  section2">
+        <div class="container container-section2">
+            <div class="text-center pb-12">
+                <h3 class="text-base font-semibold  tracking-wide text-uppercase">
+                    Big Features Packed in One Place
+                </h3>
+
+            </div>
+            <div class="row gap-4 d-flex flex-wrap cards-section justify-content-center">
+
+                <div class="rounded-lg border bg-card text-card-foreground shadow-sm  p-6 mt-4 mb-2"
+                    style="background-color: #F9F8F7;" data-v0-t="card">
+                    <div class="flex-col space-y-1.5 p-6 flex items-center space-x-4"><svg width="22" height="22"
+                            viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M21 31.5H21.0175M14 36.75H28C29.933 36.75 31.5 35.183 31.5 33.25V8.75C31.5 6.817 29.933 5.25 28 5.25H14C12.067 5.25 10.5 6.817 10.5 8.75V33.25C10.5 35.183 12.067 36.75 14 36.75Z"
+                                stroke="#00365E" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+
+                        <div>
+                            <h3 class="text-2xl font-semibold whitespace-nowrap leading-none tracking-tight"
+                                style="color: #00365E;">
+                                Remote control</h3>
+                            <p class="text-sm " style="color: #00365E;">Check in real-time the replies from your job
+                                posts
+                                and
+                                follow-up
+                                with the best one.</p>
+
+                            <div style="margin-top: -9px; margin-top: 30px;">
+                                <a href="#" class="text-indigo-600 hover:text-indigo-900">Create account <i
+                                        class="fa-solid fa-angles-right"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="rounded-lg border bg-card text-card-foreground shadow-sm w-[350px] p-6 my-4 "
+                    data-v0-t="card">
+                    <div class="flex-col space-y-1.5 p-6 flex items-center space-x-4">
+                        <svg width="22" height="22" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M10.5005 32.75H22.7505C24.6835 32.75 26.2505 31.183 26.2505 29.25V12.4749C26.2505 12.0107 26.0661 11.5656 25.7379 11.2374L16.2631 1.76256C15.9349 1.43437 15.4897 1.25 15.0256 1.25H5.25049C3.31749 1.25 1.75049 2.817 1.75049 4.75V24M1.75049 32.75L10.2882 24.2123M10.2882 24.2123C11.2382 25.1624 12.5507 25.75 14.0005 25.75C16.9 25.75 19.2505 23.3995 19.2505 20.5C19.2505 17.6005 16.9 15.25 14.0005 15.25C11.101 15.25 8.75049 17.6005 8.75049 20.5C8.75049 21.9497 9.33811 23.2622 10.2882 24.2123Z"
+                                stroke="#00365E" stroke-width="2" stroke-linecap="round" />
+                            <path
+                                d="M10.5005 32.75H22.7505C24.6835 32.75 26.2505 31.183 26.2505 29.25V12.4749C26.2505 12.0107 26.0661 11.5656 25.7379 11.2374L16.2631 1.76256C15.9349 1.43437 15.4897 1.25 15.0256 1.25H5.25049C3.31749 1.25 1.75049 2.817 1.75049 4.75V24M1.75049 32.75L10.2882 24.2123M10.2882 24.2123C11.2382 25.1624 12.5507 25.75 14.0005 25.75C16.9 25.75 19.2505 23.3995 19.2505 20.5C19.2505 17.6005 16.9 15.25 14.0005 15.25C11.101 15.25 8.75049 17.6005 8.75049 20.5C8.75049 21.9497 9.33811 23.2622 10.2882 24.2123Z"
+                                stroke="#00365E" stroke-width="2" stroke-linecap="round" />
+                        </svg>
+
+                        <div>
+                            <h3 class="text-2xl font-semibold whitespace-nowrap leading-none tracking-tight"
+                                style="color: #00365E;">
+                                Progression reports</h3>
+                            <p class="text-sm text-muted-foreground" style="color: #00365E; font-family: Poppins;">
+                                Receive
+                                in your
+                                inbox a progression report about your vessel
+                                maintenance
+                                with photos and videos</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="rounded-lg border bg-card text-card-foreground shadow-sm w-[350px] p-6 my-4"
+                    data-v0-t="card">
+                    <div class="flex-col space-y-1.5 p-6 flex items-center space-x-4"><svg width="22" height="22"
+                            viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M31.75 17C31.75 25.1462 25.1462 31.75 17 31.75V33.75C26.2508 33.75 33.75 26.2508 33.75 17H31.75ZM17 31.75C8.8538 31.75 2.25 25.1462 2.25 17H0.25C0.25 26.2508 7.74923 33.75 17 33.75V31.75ZM2.25 17C2.25 8.8538 8.8538 2.25 17 2.25V0.25C7.74923 0.25 0.25 7.74923 0.25 17H2.25ZM17 2.25C25.1462 2.25 31.75 8.8538 31.75 17H33.75C33.75 7.74923 26.2508 0.25 17 0.25V2.25ZM23 17C23 20.3137 20.3137 23 17 23V25C21.4183 25 25 21.4183 25 17H23ZM17 23C13.6863 23 11 20.3137 11 17H9C9 21.4183 12.5817 25 17 25V23ZM11 17C11 13.6863 13.6863 11 17 11V9C12.5817 9 9 12.5817 9 17H11ZM17 11C20.3137 11 23 13.6863 23 17H25C25 12.5817 21.4183 9 17 9V11ZM27.4298 5.15596L21.2426 11.3431L22.6569 12.7574L28.844 6.57018L27.4298 5.15596ZM21.2426 22.6569L27.4298 28.844L28.844 27.4298L22.6569 21.2426L21.2426 22.6569ZM12.7574 11.3431L6.57018 5.15596L5.15596 6.57017L11.3431 12.7574L12.7574 11.3431ZM11.3431 21.2426L5.15596 27.4298L6.57017 28.844L12.7574 22.6569L11.3431 21.2426Z"
+                                fill="#00365E" />
+                            <path
+                                d="M31.75 17C31.75 25.1462 25.1462 31.75 17 31.75V33.75C26.2508 33.75 33.75 26.2508 33.75 17H31.75ZM17 31.75C8.8538 31.75 2.25 25.1462 2.25 17H0.25C0.25 26.2508 7.74923 33.75 17 33.75V31.75ZM2.25 17C2.25 8.8538 8.8538 2.25 17 2.25V0.25C7.74923 0.25 0.25 7.74923 0.25 17H2.25ZM17 2.25C25.1462 2.25 31.75 8.8538 31.75 17H33.75C33.75 7.74923 26.2508 0.25 17 0.25V2.25ZM23 17C23 20.3137 20.3137 23 17 23V25C21.4183 25 25 21.4183 25 17H23ZM17 23C13.6863 23 11 20.3137 11 17H9C9 21.4183 12.5817 25 17 25V23ZM11 17C11 13.6863 13.6863 11 17 11V9C12.5817 9 9 12.5817 9 17H11ZM17 11C20.3137 11 23 13.6863 23 17H25C25 12.5817 21.4183 9 17 9V11ZM27.4298 5.15596L21.2426 11.3431L22.6569 12.7574L28.844 6.57018L27.4298 5.15596ZM21.2426 22.6569L27.4298 28.844L28.844 27.4298L22.6569 21.2426L21.2426 22.6569ZM12.7574 11.3431L6.57018 5.15596L5.15596 6.57017L11.3431 12.7574L12.7574 11.3431ZM11.3431 21.2426L5.15596 27.4298L6.57017 28.844L12.7574 22.6569L11.3431 21.2426Z"
+                                fill="#00365E" />
+                        </svg>
+
+                        <div>
+                            <h3 class="text-2xl font-semibold whitespace-nowrap leading-none tracking-tight"
+                                style="color: #00365E; font-family: Poppins;">Crew & fleet manager</h3>
+                            <p class="text-sm text-muted-foreground" style="color: #00365E; font-family: Poppins;">
+                                Receive
+                                in your
+                                inbox a progression report about your vessel
+                                maintenance
+                                with photos and videosManage your team and crew and follow their actions and
+                                performance.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="rounded-lg border bg-card text-card-foreground shadow-sm w-[350px] p-6 my-4"
+                    data-v0-t="card">
+                    <div class="flex-col space-y-1.5 p-6 flex items-center space-x-4"><svg width="22" height="22"
+                            viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M10 8.25V1.25M24 8.25V1.25M8.25 15.25H25.75M4.75 32.75H29.25C31.183 32.75 32.75 31.183 32.75 29.25V8.25C32.75 6.317 31.183 4.75 29.25 4.75H4.75C2.817 4.75 1.25 6.317 1.25 8.25V29.25C1.25 31.183 2.817 32.75 4.75 32.75Z"
+                                stroke="#00365E" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                            <path
+                                d="M10 8.25V1.25M24 8.25V1.25M8.25 15.25H25.75M4.75 32.75H29.25C31.183 32.75 32.75 31.183 32.75 29.25V8.25C32.75 6.317 31.183 4.75 29.25 4.75H4.75C2.817 4.75 1.25 6.317 1.25 8.25V29.25C1.25 31.183 2.817 32.75 4.75 32.75Z"
+                                stroke="#00365E" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+
+                        <div>
+                            <h3 class="text-2xl font-semibold whitespace-nowrap leading-none tracking-tight"
+                                style="color: #00365E; font-family: Poppins;">Maintenance scheduler
+                            </h3>
+                            <p class="text-sm text-muted-foreground" style="color: #00365E; font-family: Poppins;">Never
+                                get
+                                surprised
+                                before starting a new trip. Keep your vessel
+                                health check.</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <div class="text-right pt-12 mb-3">
+                <a href="#" class="text-indigo-600 hover:text-indigo-900 text-uppercase allPlans"
+                    style="color: #00365E; font-family: Poppins;">View All Plans <i
+                        class="fa-solid fa-angles-right"></i></a>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- SECTION3 -->
+
+
+
+    <div class="captain-section1  position-relative">
+        <div class="container  ">
+            <div class="background-lines-sss">
+                <img src=" {{asset('landing/images/leftwaves.png')}}  " alt="">
+            </div>
+            <div class="image-container position-relative" style="z-index: 2;">
+                <img src=" {{asset('landing/images/surveyimg.png')}}   " class="surveyimg" alt="img">
+            </div>
+            <div class="row align-items-center relative pt-5" style="z-index: 2;">
+                <div class="col-md-12">
+                    <h5 class="sub-title">All features to guarantee safety and security</h5>
+                    <h2 class="big-title text-uppercase">Register today and discover the simplicity, efficiency, and peace of mind that
+                        comes with our online platform.</h2>
+                </div>
+                <div class="col-md-12 mt-8 text-center py-4"> <!-- Adjusted column class -->
+                    <div class="buttons-cta d-inline-block position-relative" style="z-index: 2;">
+                        <!-- Modified buttons container -->
+                        <a href="#" class="btn btn-primary d-block text-uppercase"
+                            style="background-color: #5E8BF7; color: white;">Create Free Account now</a>
+                        <a href="#" class="btn btn-outline-primary d-block text-uppercase" style="color:black">Check Our
+                            Plans</a>
+                    </div>
+                </div>
+
+
+                <div class="background-lines-ss">
+                    <img src=" {{asset('landing/images/lines-right-bottom.png')}}  " alt="">
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+
+
+
+
+    <!-- section4 -->
+      <!-- section6 -->
+    <div class="section6">
+        <div class="container">
+          <div class="d-flex px-2 justify-content-center flex-column flex-md-row " style="gap:30px;">
+            <div class="col-md-6">
+              <h3 class="sub-title text-uppercase">Be the first to know</h3>
+              <h1>Stay up-to-date with the news</h1>
+              <form class="contact-form ">
+                <input type="email" placeholder="Email*" class="form-control" required>
+                <button type="submit" class="  footer-button mt-3 text-uppercase" style="">Subscribe
+                  newsletter</button>
+              </form>
+            </div>
+            <div class="col-md-6">
+              <img src="{{asset('landing/images/contact-us.png')}} " alt="Image" class="img-fluid">
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+
+
+    <footer id="down">
+        <div class="footer-section1">
+          <div class="container">
+            <div class="row">
+              <div class="col-12 col-md-6 text-center items-center align-items-center  text-center text-md-left">
+                <h3 class="  text-uppercase ">Secured payments & satisfaction</h3>
+              </div>
+              <div class="col-12 col-md-6 text-center text-md-right">
+                <img src="{{asset('landing/images/payments.png')}} " alt="Visa">
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="footer-section2">
+          <div class="container">
+            <div class="row align-items-center footer-section-responsive">
+              <div class="col-lg-4 text-center ">
+                <p class="text-center text-lg-left">Copyright © 2024 WORLD YACHT REFIT</p>
+              </div>
+              <div class="col-lg-8 text-center footer-links">
+                <a href="#">Terms and Conditions</a>
+                <a href="#">Privacy Policy</a>
+                <a href="{{route('landing.contact')}}">Contact Us</a>
+                <a href="#">Cookies Policy</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </footer>
+
+
+
+</body>
+
+</html>
+
+
+<script src="{{ asset('landing/js/jquery-3.3.1.min.js') }}"></script>
+<script src="{{ asset('landing/js/popper.min.js') }}"></script>
+<script>
+    $(document).ready(function () {
+        $('[data-toggle="popover"]').popover();
+    });
+</script>
+<script src="{{ asset('landing/js/bootstrap.min.js') }}"></script>
+<script src="{{ asset('landing/js/jquery.sticky.js') }}"></script>
+<script src="{{ asset('landing/js/main.js') }}"></script>
+<script src="{{ asset('landing/js/owl.carousel.min.js') }}"></script>
+<script src="{{ asset('landing/js/my-carousel.js') }}" type="text/javascript"></script>
+
+</body>
+
+</html>

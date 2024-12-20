@@ -1,0 +1,839 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700" rel="stylesheet">
+
+    <!-- Icomoon Icon Font -->
+    <link rel="stylesheet" href="{{ asset('landing/fonts/icomoon/style.css') }}">
+
+    <!-- Owl Carousel CSS -->
+    <link rel="stylesheet" href="{{ asset('landing/css/owl.carousel.min.css') }}">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="{{ asset('landing/css/bootstrap.min.css') }}">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- Google Fonts for additional styles -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap"
+        rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+
+    <!-- Custom Stylesheets -->
+    <link rel="stylesheet" href="{{ asset('landing/css/style.css') }}">
+    <link rel="stylesheet" href="{{ asset('landing/css/Company.css') }}">
+    <link rel="stylesheet" href="{{ asset('landing/css/nav.css') }}">
+    <link rel="stylesheet" href="{{ asset('landing/css/responsive.css') }}">
+
+    <title>
+        Yacht Management Platform
+    </title>
+</head>
+
+<body class="" style="overflow-x: hidden; 
+">
+
+    <div class="site-mobile-menu">
+        <div class="site-mobile-menu-header">
+            <div class="site-mobile-menu-close mt-3">
+                <span class="icon-close2 js-menu-toggle">X</span>
+            </div>
+        </div>
+        <div class="site-mobile-menu-body"></div>
+    </div>
+
+    <header class="site-navbar" role="banner">
+        <div class="px-3">
+            <div class="row align-items-center">
+                <div class="col-10 col-xl-2">
+                    <h1 class="mb-0 site-logo"><a href="index.html" class="text-white mb-0">
+                            <img src="{{ asset('landing/images/logo.png') }}" alt="logo">
+                        </a></h1>
+                </div>
+                <div class="col-12 col-md-10 d-none d-xl-block">
+                    <nav class="site-navigation position-relative text-right" role="navigation">
+
+                        <ul class="site-menu js-clone-nav mr-auto d-none d-lg-block">
+                            <li><a href="{{ route('landing.captain') }}"><span>OWNERS & CAPTAINS</span></a></li>
+                            <li><a href="{{ route('landing.comapany-profession') }}"><span>COMPANIES &
+                                        PROFESSION</span></a></li>
+                            <li><a href="{{ route('landing.surveyor') }}"><span>SURVEYORS</span></a></li>
+                            <li><a href="{{ route('landing.plans') }}"><span>PLANS</span></a></li>
+
+                            <li class="btn-group regestration-buttons" role="group" aria-label="Basic example">
+                                <button href="" type="button" class="btn  button-lg">
+                                    <a href="{{route('login')}}">LOGIN</a>
+                                </button>
+                                <button type="button" class="btn " style=" background: white; color: #111;">
+                                    <a style="text-decoration: none;  " href="{{route('registeration')}}">
+                                        GET STARTED
+                                    </a>
+                                </button>
+                            </li>
+                        </ul>
+
+                    </nav>
+                </div>
+                <div class="d-inline-block d-xl-none ml-md-0 mr-auto py-3" style="position: relative; top: 3px;"><a
+                        href="#" class="site-menu-toggle js-menu-toggle text-white"><span class="icon-menu h3">
+                            <i class="fas fa-bars"></i>
+                        </span></a></div>
+            </div>
+        </div>
+        </div>
+    </header>
+
+
+    <div class="hero pt-5 bg-danger " style="background-image: url('landing/images/companyhero.jpg');  height: 75vh;">
+        <div class="overlay-company"></div>
+        <div class="container pt-5 content">
+            <div class="row align-items-center justify-content-center pt-5">
+                <div class="col-lg-12 intro text-center">
+                    <div class="container mx-auto px-4 text-center">
+                        <h3 class="text-uppercase subtitle-hero">For
+                            companies, professionals & tradespeople</h3>
+                        <h1 class=" text-white">EXPAND
+                            YOUR NETWORK, AND PROMOTE CLIENT TRUST!</h1>
+                        <p class="lead text-gray-300  py-0 hero-description">Planned
+                            superyacht maintenance is the key to vessel
+                            reliability and value!</p>
+
+                        <!-- <button class="text-white py-5 bg-transparent border-0" style="outline: none;">
+
+                            <a href="#down" class="text-white">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="currentColor"
+                                    class="bi bi-chevron-double-down" viewBox="0 0 16 16">
+                                    <path fill-rule="evenodd"
+                                        d="M1.646 6.646a.5.5 0 0 1 .708 0L8 12.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708" />
+                                    <path fill-rule="evenodd"
+                                        d="M1.646 2.646a.5.5 0 0 1 .708 0L8 8.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708" />
+                                </svg>
+                            </a>
+                        </button> -->
+
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+        </div>
+
+    </div>
+    <!-- section1 -->
+    <div class="message-section">
+        <button onclick="handleAlert()" class="message-div">
+            <img data-toggle="popover" data-content="I am happy to help"
+                src="{{ asset('landing/images/message.png') }} ">
+        </button>
+
+    </div>
+
+    <div class="company-section1 ">
+        <div class="">
+            <div class="align-items-center bg-transparent">
+
+
+                <div style="background-color: #333333;position: relative;">
+
+                    <div class="captain-section1 px-0 position-relative">
+                        <div class="container ">
+                            <div class="row align-items-center">
+                                <div class="col-md-9 col-xl-12  mx-auto">
+                                    <h5 class="sub-title pt-5" style="color:#fff">Reducing the risk of operational
+                                        performance failure.
+                                    </h5>
+                                    <h2 class="big-title py-3" style="color: #fff;">Our planned maintenance system are
+                                        set up
+                                        so the companies and professionals can update, monitor and view upcoming yacht
+                                        tasks and manage downtime on his schedule.</h2>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row align-items-center justify-content-center" style="margin: 0 !important;">
+                        <div class="col-7 mt-4">
+                            <div class="bg-white p-2" style="border-radius: 10px;">
+                                <img src="{{ asset('landing/images/Dashboard (1).png') }} " alt="Dashboard Image"
+                                    style="width: 100%; height: auto; border-radius: 10px;">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="background-lines-cap px-0" style="z-index: -99;">
+                        <img src="{{ asset('landing/images/table-wave.png') }} " alt="">
+                    </div>
+                </div>
+
+
+
+            </div>
+        </div>
+    </div>
+
+    <!-- section2 -->
+
+
+
+    <div class="bg-gradient-to-b section4 my-5">
+        <div class="container py-16">
+            <div class="text-center">
+                <h1>
+                    Build trust and confidence between yacht owners and professionals
+
+                </h1>
+            </div>
+        </div>
+    </div>
+
+
+
+    <!-- section3 -->
+    <section>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 leftText">
+                    <p class="text-center text-md-left " style="color: #00365E;">
+                        Collaboration enhance
+                    </p>
+                    <h2 class="text-left ">
+                        Transparency is the key for success
+                    </h2>
+                    <p class="transparency-para ">
+                        Our platform cultivates transparency in yacht
+                        maintenance and repairs, enabling companies and
+                        professionals to operate with integrity and
+                        accountability on each job they accept.
+                    </p>
+                    <p class="transparency-para">
+                        We provide companies with a secure platform to
+                        manage their maintenance schedules, view detailed
+                        records of services performed, and track the
+                        progress of projects, making it easy to showcase the
+                        job to the client or present any unexpected
+                        situations trought Photos or videos recorded in the
+                        place. </p>
+                    <p class="transparency-para">
+                        Our platform cultivates transparency in yacht
+                        maintenance and repairs, enabling companies and
+                        professionals to operate with integrity and
+                        accountability on each job they accept.
+                    </p>
+                    <p class="transparency-para">
+                        Professionals can showcase their expertise and
+                        experience through detailed profiles and
+                        testimonials, allowing Yacht owners and Captains to
+                        make informed decisions. </p>
+
+                    </p>
+                    <p class="transparency-para">
+
+                        We align expectactions & reality for a smooth
+                        collaboration.
+
+                    </p>
+                </div>
+                <div class="col-12 col-md-6">
+                    <div class="background-lines-rc">
+                        <img src=" {{ asset('landing/images/rightwaves.png') }} " alt="">
+                    </div>
+                    <!-- card -->
+
+                    <div class="m-auto px-3 py-2 border cards-company"
+                        style="position:relative; z-index: 2; background-color: #fff;width: 326px;">
+                        <div>
+                            <p class="text-left ">Job ID: 6857
+                            <p>
+                        </div>
+                        <div class="  " style="display:  flex; align-items: center; align-content: center;">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="custom-svg"
+                                style="width: 22px; height: 22px;color: red;  " viewBox="0 0 384 512">!Font Awesome
+                                Free
+                                6.5.1 by @fontawesome - https://fontawesome.com License -
+                                https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.
+                                <path
+                                    d="M215.7 499.2C267 435 384 279.4 384 192C384 86 298 0 192 0S0 86 0 192c0 87.4 117 243 168.3 307.2c12.3 15.3 35.1 15.3 47.4 0zM192 128a64 64 0 1 1 0 128 64 64 0 1 1 0-128z" />
+                            </svg>
+                            <p class=" text-uppercase ml-1 mb-1" style="color: #00365E;">
+                                Port
+                                portal nous, mollorca
+                            <p>
+                        </div>
+                        <div class="d-flex justify-content-between">
+                            <div style="display: flex; align-items: center; gap: 5px; ">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="custom-svg"
+                                    style="width: 20px; height: 20px;" fill="currentColor"
+                                    class="bi bi-calendar-plus" viewBox="0 0 16 16">
+                                    <path
+                                        d="M8 7a.5.5 0 0 1 .5.5V9H10a.5.5 0 0 1 0 1H8.5v1.5a.5.5 0 0 1-1 0V10H6a.5.5 0 0 1 0-1h1.5V7.5A.5.5 0 0 1 8 7" />
+                                    <path
+                                        d="M3.5 0a.5.5 0 0 1 .5.5V1h8V.5a.5.5 0 0 1 1 0V1h1a2 2 0 0 1 2 2v11a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V3a2 2 0 0 1 2-2h1V.5a.5.5 0 0 1 .5-.5M1 4v10a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V4z" />
+                                </svg>
+                                <p class="mt-3 ">Posted 4
+                                    months ago
+                                <p>
+                            </div>
+                            <div>
+                                <p>Picture: 1</p>
+                                <p>Video: 1</p>
+
+                                <div>
+                                </div>
+                            </div>
+                        </div>
+                        <p>Yacht Manufacturer: Sunseeker
+                            Manhattan</p>
+                        <p>Yacht Size: 0-10</p>
+
+                        <div class="border rounded d-flex justify-content-center py-2 align-items-center  w-75 m-auto">
+                            <svg xmlns="http://www.w3.org/2000/svg" style="width: 22px; height: 22px; fill:#00365E;"
+                                fill="currentColor" class="bi bi-bookmark" viewBox="0 0 16 16">
+                                <path
+                                    d="M2 2a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v13.5a.5.5 0 0 1-.777.416L8 13.101l-5.223 2.815A.5.5 0 0 1 2 15.5zm2-1a1 1 0 0 0-1 1v12.566l4.723-2.482a.5.5 0 0 1 .554 0L13 14.566V2a1 1 0 0 0-1-1z" />
+                            </svg>
+                            <button class="bg-white border-0 " style="color: #00365E;">Book
+                                Mark this job</button>
+                        </div>
+                        <p class="py-3">I want a good
+                            quotation for that</p>
+                        <div class="d-flex flex-wrap">
+                            <p>Tag:</p>
+                            <a href="#" class="tag-link">starlink</a>
+                            <a href="#" class="tag-link">technology</a>
+                            <a href="#" class="tag-link">space</a>
+                            <a href="#" class="tag-link">science</a>
+                            <a href="#" class="tag-link">exploration</a>
+                        </div>
+                    </div>
+                    <div class="video-card">
+                        <img src=" {{ asset('landing/images/video-card.png') }}  " alt="">
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+    </section>
+
+    <section class="bestjobsSection px-0 " style="position: relative;">
+        <div class="container" style="z-index: 99;">
+            <div class="row">
+                <div class="col-md-6 " style="position: relative;">
+                    <div class="col-md-6 d-none d-md-block">
+                        <img src="{{ asset('landing/images/Image+Ctas.png') }}  ">
+                    </div>
+                    <div class="col-md-6 d-block d-md-none" style="width: 100% !important;">
+                        <img src="{{ asset('landing/images/mobile-coll.png') }}" class="img-fluid">
+                    </div>
+
+                </div>
+                <div class="col-md-6">
+                    <p class="text-left " style="color: #00365E;">
+                        Collaboration enhance
+                    </p>
+                    <h2 class="text-left " style="color: #00365E;">
+                        Accept the best jobs from qualified
+                        yacht owners
+                    </h2>
+                    <p class=" pt-4 transparency-para">
+                        Join our platform and discover a
+                        world of opportunities to work on
+                        the most luxurious yachts in the
+                        world. We connect you with qualified
+                        yacht owners who are looking for
+                        skilled professionals to maintain
+                        and repair their vessels.
+                    </p>
+                    <p class="transparency-para pt-3">
+                        Get access to a wide range of jobs,
+                        ranging from routine maintenance to
+                        major repairs, and work with serious
+                        Owners that want the best for their
+                        vessel without payment risks or
+                        incomplete job descriptions.
+                    </p>
+                    <p class="transparency-para pt-3">
+                        If you're a skilled <span class="font-weight-bolder">professional</span>
+                        with a passion for yachting, we
+                        encourage you to join our platform
+                        and start exploring your career
+                        options today
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="">
+            <img src=" {{ asset('landing/images/coll.png') }} "
+                style="position: absolute; top: 0%; width:60%; z-index: -1; height: 80%;">
+        </div>
+
+    </section>
+
+    <section class="UnlockSection"
+        style="background-image: url('landing/images/plansimage.jpg'); margin: 0px !important; background-repeat: no-repeat; background-size: cover; position: relative;">
+        <div class="container">
+            <div class="row gap-4 h-full position-relative   py-4 cards-section" style="z-index: 99;">
+                <div class="h-full d-flex flex-column flex-md-row px-md-5 px-3">
+                    <div class="col-md-8">
+                        <h2 class="text-white"
+                            style="
+                        font-family: Cormorant Garamond;
+                        font-size: 38px;
+                        font-weight: 400;
+                        line-height: 50px;
+                        letter-spacing: 1px;
+                        text-align: left;
+                        ">
+                            Unlock your business's full potential with our cutting-edge online platform
+                        </h2>
+                        <p class="text-white text-uppercase"
+                            style="
+                        font-family: Poppins;
+                        font-size: 16px;
+                        font-weight: 400;
+                        line-height: 24px;
+                        letter-spacing: 2px;
+                        ">
+                            Start today and get 1 month free full access
+                        </p>
+                    </div>
+                    <div class="col-md-3 mt-3  cfat-section px-0  mt-md-0">
+                        <div class="mt-8 buttons-cta mb-5 ">
+                            <a href="./AccountSelection.html"
+                                class="btn btn-primary border d-block text-uppercase">Create Free
+                                Account</a>
+                            <a href="./plans.html"
+                                class="btn btn-outline-primary border border-top-0 d-block text-uppercase">Check
+                                Our Plans</a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <div class="overlayb-company"></div>
+
+    </section>
+
+
+    <section style="position: relative; background-color: #333333;">
+
+        <div class="bg-gray-100 py-5     pb-2">
+            <div class="background-lines-comp">
+                <img src="{{ asset('landing/images/waves-comp.png') }}" alt="">
+            </div>
+            <div class="container-fluid position-relative big-title-Section">
+                <!-- wave image -->
+
+                <div class="text-center pb-12">
+                    <h4 class="stream-line-text" style="color: white; font-family: Cormorant SC;">
+                        Streamline your lead generation & retantion with our intuitive features.
+                    </h4>
+                    <h6 style="
+                        font-family: Poppins;
+                       
+                        "
+                        class="big-feature-company">Big features for Companies,
+                        Professionals and
+                        tradespeople</h6>
+                </div>
+
+                <div class="row gap-4 d-flex flex-wrap  cards-section  justify-content-center">
+
+                    <div class="rounded-lg border bg-card text-card-foreground shadow-sm  p-6 mt-4 mb-2 cards-coll cards-section1"
+                        s data-v0-t="card">
+                        <div class="flex-col space-y-1.5 p-6 flex items-center space-x-4"><svg width="24"
+                                height="34" viewBox="0 0 24 34" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M12 27.5H12.0175M5 32.75H19C20.933 32.75 22.5 31.183 22.5 29.25V4.75C22.5 2.817 20.933 1.25 19 1.25H5C3.067 1.25 1.5 2.817 1.5 4.75V29.25C1.5 31.183 3.067 32.75 5 32.75Z"
+                                    stroke="white" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                            </svg>
+                            <div>
+                                <h3 class=" text-2xl font-semibold whitespace-nowrap leading-none tracking-tight">
+                                    Remote
+                                    control
+                                </h3>
+                                <p class="text-sm text-muted-foreground card-description-text">Check in real-time
+                                    the
+                                    replies from your job posts
+                                    and
+                                    follow-up
+                                    with the best one.</p>
+
+                                <div style="margin-top: -9px; margin-top: 30px;">
+                                    <a href="#" class="text-indigo-600 hover:text-indigo-900">Create account <i
+                                            class="fa-solid fa-angles-right"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="rounded-lg border bg-card text-card-foreground shadow-sm w-[350px] p-6 my-4  cards-coll"
+                        data-v0-t="card">
+                        <div class="flex-col space-y-1.5 p-6 flex items-center space-x-4">
+                            <svg width="22" height="22" viewBox="0 0 50 50" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M10.5005 32.75H22.7505C24.6835 32.75 26.2505 31.183 26.2505 29.25V12.4749C26.2505 12.0107 26.0661 11.5656 25.7379 11.2374L16.2631 1.76256C15.9349 1.43437 15.4897 1.25 15.0256 1.25H5.25049C3.31749 1.25 1.75049 2.817 1.75049 4.75V24M1.75049 32.75L10.2882 24.2123M10.2882 24.2123C11.2382 25.1624 12.5507 25.75 14.0005 25.75C16.9 25.75 19.2505 23.3995 19.2505 20.5C19.2505 17.6005 16.9 15.25 14.0005 15.25C11.101 15.25 8.75049 17.6005 8.75049 20.5C8.75049 21.9497 9.33811 23.2622 10.2882 24.2123Z"
+                                    stroke="#fff" stroke-width="2" stroke-linecap="round" />
+                                <path
+                                    d="M10.5005 32.75H22.7505C24.6835 32.75 26.2505 31.183 26.2505 29.25V12.4749C26.2505 12.0107 26.0661 11.5656 25.7379 11.2374L16.2631 1.76256C15.9349 1.43437 15.4897 1.25 15.0256 1.25H5.25049C3.31749 1.25 1.75049 2.817 1.75049 4.75V24M1.75049 32.75L10.2882 24.2123M10.2882 24.2123C11.2382 25.1624 12.5507 25.75 14.0005 25.75C16.9 25.75 19.2505 23.3995 19.2505 20.5C19.2505 17.6005 16.9 15.25 14.0005 15.25C11.101 15.25 8.75049 17.6005 8.75049 20.5C8.75049 21.9497 9.33811 23.2622 10.2882 24.2123Z"
+                                    stroke="#fff" stroke-width="2" stroke-linecap="round" />
+                            </svg>
+
+                            <div>
+                                <h3 class="text-2xl font-semibold whitespace-nowrap leading-none tracking-tight">
+                                    Progression
+                                    reports</h3>
+                                <p class="text-sm card-description-text">Receive in your inbox a progression report
+                                    about
+                                    your
+                                    vessel
+                                    maintenance
+                                    with photos and videos</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="rounded-lg border bg-card text-card-foreground shadow-sm w-[350px] p-6 my-4 cards-coll"
+                        data-v0-t="card">
+                        <div class="flex-col space-y-1.5 p-6 flex items-center space-x-4"><svg width="22"
+                                height="22" viewBox="0 0 50 50" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M31.75 17C31.75 25.1462 25.1462 31.75 17 31.75V33.75C26.2508 33.75 33.75 26.2508 33.75 17H31.75ZM17 31.75C8.8538 31.75 2.25 25.1462 2.25 17H0.25C0.25 26.2508 7.74923 33.75 17 33.75V31.75ZM2.25 17C2.25 8.8538 8.8538 2.25 17 2.25V0.25C7.74923 0.25 0.25 7.74923 0.25 17H2.25ZM17 2.25C25.1462 2.25 31.75 8.8538 31.75 17H33.75C33.75 7.74923 26.2508 0.25 17 0.25V2.25ZM23 17C23 20.3137 20.3137 23 17 23V25C21.4183 25 25 21.4183 25 17H23ZM17 23C13.6863 23 11 20.3137 11 17H9C9 21.4183 12.5817 25 17 25V23ZM11 17C11 13.6863 13.6863 11 17 11V9C12.5817 9 9 12.5817 9 17H11ZM17 11C20.3137 11 23 13.6863 23 17H25C25 12.5817 21.4183 9 17 9V11ZM27.4298 5.15596L21.2426 11.3431L22.6569 12.7574L28.844 6.57018L27.4298 5.15596ZM21.2426 22.6569L27.4298 28.844L28.844 27.4298L22.6569 21.2426L21.2426 22.6569ZM12.7574 11.3431L6.57018 5.15596L5.15596 6.57017L11.3431 12.7574L12.7574 11.3431ZM11.3431 21.2426L5.15596 27.4298L6.57017 28.844L12.7574 22.6569L11.3431 21.2426Z"
+                                    fill="#fff" />
+                                <path
+                                    d="M31.75 17C31.75 25.1462 25.1462 31.75 17 31.75V33.75C26.2508 33.75 33.75 26.2508 33.75 17H31.75ZM17 31.75C8.8538 31.75 2.25 25.1462 2.25 17H0.25C0.25 26.2508 7.74923 33.75 17 33.75V31.75ZM2.25 17C2.25 8.8538 8.8538 2.25 17 2.25V0.25C7.74923 0.25 0.25 7.74923 0.25 17H2.25ZM17 2.25C25.1462 2.25 31.75 8.8538 31.75 17H33.75C33.75 7.74923 26.2508 0.25 17 0.25V2.25ZM23 17C23 20.3137 20.3137 23 17 23V25C21.4183 25 25 21.4183 25 17H23ZM17 23C13.6863 23 11 20.3137 11 17H9C9 21.4183 12.5817 25 17 25V23ZM11 17C11 13.6863 13.6863 11 17 11V9C12.5817 9 9 12.5817 9 17H11ZM17 11C20.3137 11 23 13.6863 23 17H25C25 12.5817 21.4183 9 17 9V11ZM27.4298 5.15596L21.2426 11.3431L22.6569 12.7574L28.844 6.57018L27.4298 5.15596ZM21.2426 22.6569L27.4298 28.844L28.844 27.4298L22.6569 21.2426L21.2426 22.6569ZM12.7574 11.3431L6.57018 5.15596L5.15596 6.57017L11.3431 12.7574L12.7574 11.3431ZM11.3431 21.2426L5.15596 27.4298L6.57017 28.844L12.7574 22.6569L11.3431 21.2426Z"
+                                    fill="#fff" />
+                            </svg>
+
+                            <div>
+                                <h3 class="text-2xl font-semibold whitespace-nowrap leading-none tracking-tight">
+                                    Crew &
+                                    fleet
+                                    manager</h3>
+                                <p class="text-sm card-description-text">Manage your team and crew and follow their
+                                    actions
+                                    and performance.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="rounded-lg border bg-card text-card-foreground shadow-sm w-[350px] p-6 my-4 cards-coll"
+                        data-v0-t="card">
+                        <div class="flex-col space-y-1.5 p-6 flex items-center space-x-4"><svg width="22"
+                                height="22" viewBox="0 0 50 50" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M10 8.25V1.25M24 8.25V1.25M8.25 15.25H25.75M4.75 32.75H29.25C31.183 32.75 32.75 31.183 32.75 29.25V8.25C32.75 6.317 31.183 4.75 29.25 4.75H4.75C2.817 4.75 1.25 6.317 1.25 8.25V29.25C1.25 31.183 2.817 32.75 4.75 32.75Z"
+                                    stroke="#fff" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                                <path
+                                    d="M10 8.25V1.25M24 8.25V1.25M8.25 15.25H25.75M4.75 32.75H29.25C31.183 32.75 32.75 31.183 32.75 29.25V8.25C32.75 6.317 31.183 4.75 29.25 4.75H4.75C2.817 4.75 1.25 6.317 1.25 8.25V29.25C1.25 31.183 2.817 32.75 4.75 32.75Z"
+                                    stroke="#fff" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                            </svg>
+
+                            <div>
+                                <h3 class="text-2xl font-semibold whitespace-nowrap leading-none tracking-tight">
+                                    Maintenance
+                                    scheduler
+                                </h3>
+                                <p class="text-sm card-description-text">Never get surprised before starting a new
+                                    trip.
+                                    Keep
+                                    your vessel
+                                    health check.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="rounded-lg border bg-card text-card-foreground shadow-sm  p-6 mt-4 mb-2 cards-coll" s
+                        data-v0-t="card">
+                        <div class="flex-col space-y-1.5 p-6 flex items-center space-x-4"><svg width="24"
+                                height="34" viewBox="0 0 24 34" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M12 27.5H12.0175M5 32.75H19C20.933 32.75 22.5 31.183 22.5 29.25V4.75C22.5 2.817 20.933 1.25 19 1.25H5C3.067 1.25 1.5 2.817 1.5 4.75V29.25C1.5 31.183 3.067 32.75 5 32.75Z"
+                                    stroke="white" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                            </svg>
+                            <div>
+                                <h3 class="text-2xl font-semibold whitespace-nowrap leading-none tracking-tight">
+                                    Remote
+                                    control
+                                </h3>
+                                <p class="text-sm text-muted-foreground card-description-text">Check in real-time
+                                    the
+                                    replies from your job posts
+                                    and
+                                    follow-up
+                                    with the best one.</p>
+
+                                <div style="margin-top: -9px; margin-top: 30px;">
+                                    <a href="#" class="text-indigo-600 hover:text-indigo-900">Create account <i
+                                            class="fa-solid fa-angles-right"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="rounded-lg border bg-card text-card-foreground shadow-sm w-[350px] p-6 my-4  cards-coll"
+                        data-v0-t="card">
+                        <div class="flex-col space-y-1.5 p-6 flex items-center space-x-4">
+                            <svg width="22" height="22" viewBox="0 0 50 50" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M10.5005 32.75H22.7505C24.6835 32.75 26.2505 31.183 26.2505 29.25V12.4749C26.2505 12.0107 26.0661 11.5656 25.7379 11.2374L16.2631 1.76256C15.9349 1.43437 15.4897 1.25 15.0256 1.25H5.25049C3.31749 1.25 1.75049 2.817 1.75049 4.75V24M1.75049 32.75L10.2882 24.2123M10.2882 24.2123C11.2382 25.1624 12.5507 25.75 14.0005 25.75C16.9 25.75 19.2505 23.3995 19.2505 20.5C19.2505 17.6005 16.9 15.25 14.0005 15.25C11.101 15.25 8.75049 17.6005 8.75049 20.5C8.75049 21.9497 9.33811 23.2622 10.2882 24.2123Z"
+                                    stroke="#fff" stroke-width="2" stroke-linecap="round" />
+                                <path
+                                    d="M10.5005 32.75H22.7505C24.6835 32.75 26.2505 31.183 26.2505 29.25V12.4749C26.2505 12.0107 26.0661 11.5656 25.7379 11.2374L16.2631 1.76256C15.9349 1.43437 15.4897 1.25 15.0256 1.25H5.25049C3.31749 1.25 1.75049 2.817 1.75049 4.75V24M1.75049 32.75L10.2882 24.2123M10.2882 24.2123C11.2382 25.1624 12.5507 25.75 14.0005 25.75C16.9 25.75 19.2505 23.3995 19.2505 20.5C19.2505 17.6005 16.9 15.25 14.0005 15.25C11.101 15.25 8.75049 17.6005 8.75049 20.5C8.75049 21.9497 9.33811 23.2622 10.2882 24.2123Z"
+                                    stroke="#fff" stroke-width="2" stroke-linecap="round" />
+                            </svg>
+
+                            <div>
+                                <h3 class="text-2xl font-semibold whitespace-nowrap leading-none tracking-tight">
+                                    Progression
+                                    reports</h3>
+                                <p class="text-sm card-description-text">Receive in your inbox a progression report
+                                    about
+                                    your
+                                    vessel
+                                    maintenance
+                                    with photos and videos</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="rounded-lg border bg-card text-card-foreground shadow-sm w-[350px] p-6 my-4 cards-coll"
+                        data-v0-t="card">
+                        <div class="flex-col space-y-1.5 p-6 flex items-center space-x-4"><svg width="22"
+                                height="22" viewBox="0 0 50 50" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M31.75 17C31.75 25.1462 25.1462 31.75 17 31.75V33.75C26.2508 33.75 33.75 26.2508 33.75 17H31.75ZM17 31.75C8.8538 31.75 2.25 25.1462 2.25 17H0.25C0.25 26.2508 7.74923 33.75 17 33.75V31.75ZM2.25 17C2.25 8.8538 8.8538 2.25 17 2.25V0.25C7.74923 0.25 0.25 7.74923 0.25 17H2.25ZM17 2.25C25.1462 2.25 31.75 8.8538 31.75 17H33.75C33.75 7.74923 26.2508 0.25 17 0.25V2.25ZM23 17C23 20.3137 20.3137 23 17 23V25C21.4183 25 25 21.4183 25 17H23ZM17 23C13.6863 23 11 20.3137 11 17H9C9 21.4183 12.5817 25 17 25V23ZM11 17C11 13.6863 13.6863 11 17 11V9C12.5817 9 9 12.5817 9 17H11ZM17 11C20.3137 11 23 13.6863 23 17H25C25 12.5817 21.4183 9 17 9V11ZM27.4298 5.15596L21.2426 11.3431L22.6569 12.7574L28.844 6.57018L27.4298 5.15596ZM21.2426 22.6569L27.4298 28.844L28.844 27.4298L22.6569 21.2426L21.2426 22.6569ZM12.7574 11.3431L6.57018 5.15596L5.15596 6.57017L11.3431 12.7574L12.7574 11.3431ZM11.3431 21.2426L5.15596 27.4298L6.57017 28.844L12.7574 22.6569L11.3431 21.2426Z"
+                                    fill="#fff" />
+                                <path
+                                    d="M31.75 17C31.75 25.1462 25.1462 31.75 17 31.75V33.75C26.2508 33.75 33.75 26.2508 33.75 17H31.75ZM17 31.75C8.8538 31.75 2.25 25.1462 2.25 17H0.25C0.25 26.2508 7.74923 33.75 17 33.75V31.75ZM2.25 17C2.25 8.8538 8.8538 2.25 17 2.25V0.25C7.74923 0.25 0.25 7.74923 0.25 17H2.25ZM17 2.25C25.1462 2.25 31.75 8.8538 31.75 17H33.75C33.75 7.74923 26.2508 0.25 17 0.25V2.25ZM23 17C23 20.3137 20.3137 23 17 23V25C21.4183 25 25 21.4183 25 17H23ZM17 23C13.6863 23 11 20.3137 11 17H9C9 21.4183 12.5817 25 17 25V23ZM11 17C11 13.6863 13.6863 11 17 11V9C12.5817 9 9 12.5817 9 17H11ZM17 11C20.3137 11 23 13.6863 23 17H25C25 12.5817 21.4183 9 17 9V11ZM27.4298 5.15596L21.2426 11.3431L22.6569 12.7574L28.844 6.57018L27.4298 5.15596ZM21.2426 22.6569L27.4298 28.844L28.844 27.4298L22.6569 21.2426L21.2426 22.6569ZM12.7574 11.3431L6.57018 5.15596L5.15596 6.57017L11.3431 12.7574L12.7574 11.3431ZM11.3431 21.2426L5.15596 27.4298L6.57017 28.844L12.7574 22.6569L11.3431 21.2426Z"
+                                    fill="#fff" />
+                            </svg>
+
+                            <div>
+                                <h3 class="text-2xl font-semibold whitespace-nowrap leading-none tracking-tight">
+                                    Crew &
+                                    fleet
+                                    manager</h3>
+                                <p class="text-sm card-description-text">Manage your team and crew and follow their
+                                    actions
+                                    and performance.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="rounded-lg border bg-card text-card-foreground shadow-sm w-[350px] p-6 my-4 cards-coll"
+                        data-v0-t="card">
+                        <div class="flex-col space-y-1.5 p-6 flex items-center space-x-4"><svg width="22"
+                                height="22" viewBox="0 0 50 50" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M10 8.25V1.25M24 8.25V1.25M8.25 15.25H25.75M4.75 32.75H29.25C31.183 32.75 32.75 31.183 32.75 29.25V8.25C32.75 6.317 31.183 4.75 29.25 4.75H4.75C2.817 4.75 1.25 6.317 1.25 8.25V29.25C1.25 31.183 2.817 32.75 4.75 32.75Z"
+                                    stroke="#fff" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                                <path
+                                    d="M10 8.25V1.25M24 8.25V1.25M8.25 15.25H25.75M4.75 32.75H29.25C31.183 32.75 32.75 31.183 32.75 29.25V8.25C32.75 6.317 31.183 4.75 29.25 4.75H4.75C2.817 4.75 1.25 6.317 1.25 8.25V29.25C1.25 31.183 2.817 32.75 4.75 32.75Z"
+                                    stroke="#fff" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                            </svg>
+
+                            <div>
+                                <h3 class="text-2xl font-semibold whitespace-nowrap leading-none tracking-tight">
+                                    Maintenance
+                                    scheduler
+                                </h3>
+                                <p class="text-sm card-description-text">Never get surprised before starting a new
+                                    trip.
+                                    Keep
+                                    your vessel
+                                    health check.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+
+                <div class="text-right pt-12 mb-3 mt-3">
+                    <a href="#"
+                        class="text-indigo-600 hover:text-indigo-900 text-uppercase text-white border w-5 border-1 border-white p-3 ">View
+                        All
+                        Plans <i class="fa-solid fa-angles-right"></i></a>
+                </div>
+            </div>
+        </div>
+        </container-fluid>
+    </section>
+
+
+    <!-- section5 -->
+    <div class="section5 big-section py-4 py-lg-5 section51" style="margin-top: -1px;">
+        <div class="overlay"></div>
+        <div class="container">
+            <h2 class="section-title text-center">Register today and discover the simplicity,
+                efficiency, and peace of mind that comes
+                with our online platform.</h2>
+            <p class="text-center text-white text-uppercase">Start today and get 1 month free full access</p>
+            <div class="card-container d-flex  gap-10 flex-wrap justify-content-center align-items-center  flex-md-row "
+                style="gap: 20px">
+
+                <div class="card" style="height: 260px; width: 400px; max-width: 100%;">
+                    <p class="description">Proud vessel owners</p>
+                    <div class="bottom">
+                        <div class="icon">
+                            <svg width="44" height="40" viewBox="0 0 44 40" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M17.3333 8H5.66667C3.08934 8 1 10.0893 1 12.6667V33.6667C1 36.244 3.08934 38.3333 5.66667 38.3333H38.3333C40.9107 38.3333 43 36.244 43 33.6667V12.6667C43 10.0893 40.9107 8 38.3333 8H26.6667M17.3333 8V5.66667C17.3333 3.08934 19.4227 1 22 1C24.5773 1 26.6667 3.08934 26.6667 5.66667V8M17.3333 8C17.3333 10.5773 19.4227 12.6667 22 12.6667C24.5773 12.6667 26.6667 10.5773 26.6667 8M15 26.6667C17.5773 26.6667 19.6667 24.5773 19.6667 22C19.6667 19.4227 17.5773 17.3333 15 17.3333C12.4227 17.3333 10.3333 19.4227 10.3333 22C10.3333 24.5773 12.4227 26.6667 15 26.6667ZM15 26.6667C18.0478 26.6667 20.6406 28.6146 21.6016 31.3333M15 26.6667C11.9522 26.6667 9.35914 28.6146 8.39819 31.3333M29 19.6667H36M29 29H33.6667"
+                                    stroke="white" stroke-width="1.5" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                            </svg>
+
+                        </div>
+                        <h3 class="title">I’m a
+                            Companys</h3>
+                    </div>
+                </div>
+
+                <div class="card" style="height: 260px; width: 400px; max-width: 100%;">
+                    <p class="description">trustworthy capitals and chief-engineers</p>
+                    <div class="bottom">
+                        <div class="icon">
+                            <!-- <svg width="44" height="44" viewBox="0 0 44 44" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M38.3333 43V5.66667C38.3333 3.08934 36.244 1 33.6667 1H10.3333C7.756 1 5.66667 3.08934 5.66667 5.66667V43M38.3333 43L43 42.9999M38.3333 43H26.6667M5.66667 43L1 42.9999M5.66667 43H17.3333M15 10.3333H17.3333M15 19.6666H17.3333M26.6667 10.3333H29M26.6667 19.6666H29M17.3333 43V31.3333C17.3333 30.0446 18.378 28.9999 19.6667 28.9999H24.3333C25.622 28.9999 26.6667 30.0446 26.6667 31.3333V43M17.3333 43H26.6667"
+                                    stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                            </svg> -->
+                            <svg width="40" height="40" viewBox="0 0 44 45" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M43 27.9287C36.515 30.5538 29.4263 31.9993 22 31.9993C14.5737 31.9993 7.48502 30.5538 1 27.9287M31.3333 10.9993V6.33268C31.3333 3.75535 29.244 1.66602 26.6667 1.66602H17.3333C14.756 1.66602 12.6667 3.75535 12.6667 6.33268V10.9993M22 24.9993H22.0233M5.66667 43.666H38.3333C40.9107 43.666 43 41.5767 43 38.9993V15.666C43 13.0887 40.9107 10.9993 38.3333 10.9993H5.66667C3.08934 10.9993 1 13.0887 1 15.666V38.9993C1 41.5767 3.08934 43.666 5.66667 43.666Z"
+                                    stroke="white" stroke-width="1.5" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                            </svg>
+
+
+                        </div>
+                        <h3 class="title">I’m a
+                            Professional</h3>
+                    </div>
+                </div>
+
+            </div>
+            <div class="text-center mt-4">
+                <p class="follow-us text-uppercase font-weight-normal " style="letter-spacing: 2px; font-size: 16px;">
+                    Follow us on</p>
+                <div class="social-icons">
+                    <i class="fab fa-facebook"></i>
+                    <i class="fab fa-twitter"></i>
+                    <i class="fab fa-instagram"></i>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- section6 -->
+    <div class="section6">
+        <div class="container">
+            <div class="d-flex px-2 justify-content-center flex-column flex-md-row " style="gap:30px;">
+                <div class="col-md-6">
+                    <h3 class="sub-title text-uppercase">Be the first to know</h3>
+                    <h1>Stay up-to-date with the news</h1>
+                    <form class="contact-form ">
+                        <input type="email" placeholder="Email*" class="form-control" required>
+                        <button type="submit" class="  footer-button mt-3 text-uppercase" style="">Subscribe
+                            newsletter</button>
+                    </form>
+                </div>
+                <div class="col-md-6">
+                    <img src="{{ asset('landing/images/contact-us.png') }}" alt="Image" class="img-fluid">
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <footer id="down">
+        <div class="footer-section1">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 col-md-6 text-center items-center align-items-center  text-center text-md-left">
+                        <h3 class="  text-uppercase ">Secured payments & satisfaction</h3>
+                    </div>
+                    <div class="col-12 col-md-6 text-center text-md-right">
+                        <img src=" {{ asset('landing/images/payments.png') }}" alt="Visa">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-section2">
+            <div class="container">
+                <div class="row align-items-center footer-section-responsive">
+                    <div class="col-lg-4 text-center ">
+                        <p class="text-center text-lg-left">Copyright © 2024 WORLD YACHT REFIT</p>
+                    </div>
+                    <div class="col-lg-8 text-center footer-links">
+                        <a href="#">Terms and Conditions</a>
+                        <a href="#">Privacy Policy</a>
+                        <a href="{{route('landing.contact')}}">Contact Us</a>
+                        <a href="#">Cookies Policy</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="{{ asset('landing/js/jquery-3.3.1.min.js') }}"></script>
+
+    <!-- Popover Initialization Script -->
+    <script>
+        $(document).ready(function() {
+            $('[data-toggle="popover"]').popover();
+        });
+    </script>
+
+    <!-- Popper.js -->
+    <script src="{{ asset('landing/js/popper.min.js') }}"></script>
+
+    <!-- Bootstrap JS -->
+    <script src="{{ asset('landing/js/bootstrap.min.js') }}"></script>
+
+    <!-- Sticky JS -->
+    <script src="{{ asset('landing/js/jquery.sticky.js') }}"></script>
+
+    <!-- Main JS -->
+    <script src="{{ asset('landing/js/main.js') }}"></script>
+</body>
+
+</html>
