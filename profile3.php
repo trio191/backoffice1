@@ -168,7 +168,7 @@
                                         <i class="ti ti-edit me-1"></i> Edit profile
                                     </button>
                                 </div>
-                                <div class="profile-container">
+                                 <div class="profile-container">
                                     <img src="assets/img/jack.jpeg" alt="Profile" class="profile-image shadow">
                                     <div class="container mt-3">
                                         <div class="info-section">
